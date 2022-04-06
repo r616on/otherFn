@@ -1,12 +1,10 @@
-console.log(
-  JSON.stringify(
-    `function onChangeHandler({ errors, fields, values }) {
+function onChangeHandler({ errors, fields, values }) {
   const updatedValues = { ...values };
-  if (updatedValues.productSelectionButtons === '1') {
+  if (updatedValues.productSelectionButtons === "1") {
     const uploadedTnvd = updatedValues.productCatalog;
     const uploadedOkved = updatedValues.serviceCatalog;
     if (uploadedTnvd) {
-      updatedValues.productTnvd = '';
+      updatedValues.productTnvd = "";
       updatedValues.productTnvdName = null;
       updatedValues.productCaption = uploadedTnvd.prodDescription;
       updatedValues.productTnvd = uploadedTnvd.codeTnved;
@@ -17,7 +15,7 @@ console.log(
       };
     }
     if (uploadedOkved) {
-      updatedValues.serviceOkved = '';
+      updatedValues.serviceOkved = "";
       updatedValues.serviceOKVEDName = null;
       updatedValues.serviceCaption = uploadedOkved.servDescription;
       updatedValues.serviceOkved = uploadedOkved.codeOkved;
@@ -28,7 +26,7 @@ console.log(
       };
     }
   }
-  if (updatedValues.productSelectionButtons === '2') {
+  if (updatedValues.productSelectionButtons === "2") {
     const newTnvd = updatedValues.productTnvdName;
     const newOkved = updatedValues.serviceOKVEDName;
     if (newTnvd) {
@@ -41,8 +39,8 @@ console.log(
   }
   if (!updatedValues.estimatedTransportationCostCurrencyIndicativeRate.value) {
     updatedValues.estimatedTransportationCostCurrencyIndicativeRate = {
-      value: 'РОССИЙСКИЙ РУБЛЬ ',
-      key: '13727045-8b49-4bc3-923e-03d52bcf93ad',
+      value: "РОССИЙСКИЙ РУБЛЬ ",
+      key: "13727045-8b49-4bc3-923e-03d52bcf93ad",
     };
   }
   return {
@@ -51,8 +49,3 @@ console.log(
     updatedErrors: { ...errors },
   };
 }
-`,
-    0,
-    2
-  )
-);
