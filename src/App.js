@@ -1,9 +1,13 @@
 import "./App.css";
-import "./functionToJsone";
+import ComponentFuncToJsone from "./Component/FuncToJsone/ComponentFuncToJsone";
 //import "./codeWars";
 
 function App() {
-  return <div className="App">hello</div>;
+  return (
+    <>
+      <ComponentFuncToJsone />
+    </>
+  );
 }
 
 export default App;

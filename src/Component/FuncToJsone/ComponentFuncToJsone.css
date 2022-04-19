@@ -1,0 +1,27 @@
+.ComponentFuncToJsone {
+  max-width: 94%;
+  margin: 1%;
+  padding: 2%;
+  border: 1px solid rgba(0, 0, 0, 0.374);
+  font-size: 16px;
+  line-height: 1.5;
+}
+.Text {
+  padding: 2%;
+  border: 1px solid black;
+}
+.controll {
+  margin-top: 10px;
+  width: 100%;
+  display: flex;
+  justify-content: end;
+  align-items: center;
+}
+.controll-text {
+  font-size: 19px;
+  margin-right: 50px;
+}
+.Bottom {
+  height: 36px;
+  font-size: 16px;
+}

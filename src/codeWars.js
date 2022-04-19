@@ -29,46 +29,15 @@
 //   }
 // }
 
-const rps = (p1, p2) => {
-  if (p1 === p2) {
-    return "Draw!";
-  }
-  let win = "";
-  if (p1 === "rock") {
-    switch (p2) {
-      case "paper":
-        win = "Player 2 won!";
-        break;
-      case "scissors":
-        win = "Player 1 won!";
-        break;
-      default:
-        break;
-    }
-  } else if (p1 === "scissors") {
-    switch (p2) {
-      case "paper":
-        win = "Player 1 won!";
-        break;
-      case "rock":
-        win = "Player 2 won!";
-        break;
-      default:
-        break;
-    }
-  } else if (p1 === "paper") {
-    switch (p2) {
-      case "scissors":
-        win = "Player 2 won!";
-        break;
-      case "rock":
-        win = "Player 1 won!";
-        break;
-      default:
-        break;
-    }
-  }
-  return win;
+const xMarksTheSpot = (input) => {
+  return [];
 };
 
-console.log(rps("rock", "scissors"));
+console.log(
+  xMarksTheSpot([
+    [
+      ["o", "o"],
+      ["o", "o"],
+    ],
+  ])
+);
