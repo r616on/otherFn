@@ -100,5 +100,6 @@ function onChangeHandler({ values, fieldsMap }) {
       updatedFields.adjustmentDescription.visible = false;
     }
   }
+
   return { updatedFields, updatedValues };
 }

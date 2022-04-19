@@ -1,6 +1,7 @@
-const funcToJson = () => {
-  return JSON.stringify(
-    `function onChangeHandler({ values, fieldsMap }) {
+const funcToJson = (value) => {
+  if (!value) {
+    return JSON.stringify(
+      `function onChangeHandler({ values, fieldsMap }) {
   const updatedValues = { ...values };
   const updatedFields = { ...fieldsMap };
   const { existForceMajeure, exporterGuilty, providerGuilty, recStandart } =
@@ -105,10 +106,17 @@ const funcToJson = () => {
   return { updatedFields, updatedValues };
 }
 `
-      .replace(/"/g, "'")
-      .replace(/ {1,}/g, " "),
-    null,
-    0
-  ).replace(/\\n/g, "");
+        .replace(/"/g, "'")
+        .replace(/ {1,}/g, " "),
+      null,
+      0
+    ).replace(/\\n/g, "");
+  } else {
+    return JSON.stringify(
+      `${value}`.replace(/"/g, "'").replace(/ {1,}/g, " "),
+      null,
+      0
+    ).replace(/\\n/g, "");
+  }
 };
 export default funcToJson;

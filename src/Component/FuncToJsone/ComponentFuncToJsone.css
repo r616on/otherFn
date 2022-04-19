@@ -6,8 +6,22 @@
   font-size: 16px;
   line-height: 1.5;
 }
+.textarea-row {
+  display: flex;
+  flex-direction: column;
+}
+.textarea {
+  padding: 10px;
+}
+.textarea-Bottom {
+  margin-top: 20px;
+  margin-bottom: 30px;
+  width: 200px;
+  height: 36px;
+  align-self: end;
+}
 .Text {
-  padding: 2%;
+  padding: 1%;
   border: 1px solid black;
 }
 .controll {
