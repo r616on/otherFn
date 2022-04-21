@@ -1,0 +1,2708 @@
+{
+  "variables": {
+    "productCaption": {
+      "value": "",
+      "type": "String",
+      "valueInfo": {
+        "objectTypeName": null,
+        "serializationDataFormat": null
+      }
+    },
+    "fullCompanyName": {
+      "value": "ОБЩЕСТВО С ОГРАНИЧЕННОЙ ОТВЕТСТВЕННОСТЬЮ \"АЛСЕЗА\" ",
+      "type": "String",
+      "valueInfo": {
+        "objectTypeName": null,
+        "serializationDataFormat": null
+      }
+    },
+    "certifiedProduction": {
+      "value": "",
+      "type": "String",
+      "valueInfo": {
+        "objectTypeName": null,
+        "serializationDataFormat": null
+      }
+    },
+    "preferredSourcesMarketInformation": {
+      "value": [],
+      "type": "Object",
+      "valueInfo": {
+        "objectTypeName": "java.util.ArrayList",
+        "serializationDataFormat": "application/x-java-serialized-object"
+      }
+    },
+    "indicateCompetitiveAdvantagesProductService": {
+      "value": "",
+      "type": "String",
+      "valueInfo": {
+        "objectTypeName": null,
+        "serializationDataFormat": null
+      }
+    },
+    "productTooltip": {
+      "value": "",
+      "type": "String",
+      "valueInfo": {
+        "objectTypeName": null,
+        "serializationDataFormat": null
+      }
+    },
+    "productCatalog": {
+      "value": {},
+      "type": "Object",
+      "valueInfo": {
+        "objectTypeName": "java.util.LinkedHashMap",
+        "serializationDataFormat": "application/x-java-serialized-object"
+      }
+    },
+    "reserchObjectivesComment": {
+      "value": "",
+      "type": "String",
+      "valueInfo": {
+        "objectTypeName": null,
+        "serializationDataFormat": null
+      }
+    },
+    "eMail": {
+      "value": "",
+      "type": "String",
+      "valueInfo": {
+        "objectTypeName": null,
+        "serializationDataFormat": null
+      }
+    },
+    "serviceOkved": {
+      "value": "",
+      "type": "String",
+      "valueInfo": {
+        "objectTypeName": null,
+        "serializationDataFormat": null
+      }
+    },
+    "auditory": {
+      "value": "",
+      "type": "String",
+      "valueInfo": {
+        "objectTypeName": null,
+        "serializationDataFormat": null
+      }
+    },
+    "contact": {
+      "value": "Петр ОТР",
+      "type": "String",
+      "valueInfo": {
+        "objectTypeName": null,
+        "serializationDataFormat": null
+      }
+    },
+    "serviceTableEditTitle": {
+      "value": "Добавить услугу",
+      "type": "String",
+      "valueInfo": {
+        "objectTypeName": null,
+        "serializationDataFormat": null
+      }
+    },
+    "export": {
+      "value": "",
+      "type": "String",
+      "valueInfo": {
+        "objectTypeName": null,
+        "serializationDataFormat": null
+      }
+    },
+    "productDescription": {
+      "value": "",
+      "type": "String",
+      "valueInfo": {
+        "objectTypeName": null,
+        "serializationDataFormat": null
+      }
+    },
+    "serviceCaption": {
+      "value": "",
+      "type": "String",
+      "valueInfo": {
+        "objectTypeName": null,
+        "serializationDataFormat": null
+      }
+    },
+    "productTnvd": {
+      "value": "",
+      "type": "String",
+      "valueInfo": {
+        "objectTypeName": null,
+        "serializationDataFormat": null
+      }
+    },
+    "ogrn": {
+      "value": "1041569015300",
+      "type": "String",
+      "valueInfo": {
+        "objectTypeName": null,
+        "serializationDataFormat": null
+      }
+    },
+    "codeOkved": {
+      "value": "",
+      "type": "String",
+      "valueInfo": {
+        "objectTypeName": null,
+        "serializationDataFormat": null
+      }
+    },
+    "productsScope": {
+      "value": "",
+      "type": "String",
+      "valueInfo": {
+        "objectTypeName": null,
+        "serializationDataFormat": null
+      }
+    },
+    "selectedGeographyArea": {
+      "value": "",
+      "type": "String",
+      "valueInfo": {
+        "objectTypeName": null,
+        "serializationDataFormat": null
+      }
+    },
+    "exportVolume": {
+      "value": "",
+      "type": "String",
+      "valueInfo": {
+        "objectTypeName": null,
+        "serializationDataFormat": null
+      }
+    },
+    "companyDirector": {
+      "value": "Петр ОТР",
+      "type": "String",
+      "valueInfo": {
+        "objectTypeName": null,
+        "serializationDataFormat": null
+      }
+    },
+    "additionalMaterials": {
+      "value": [],
+      "type": "Object",
+      "valueInfo": {
+        "objectTypeName": "java.util.ArrayList",
+        "serializationDataFormat": "application/x-java-serialized-object"
+      }
+    },
+    "phone": {
+      "value": "",
+      "type": "String",
+      "valueInfo": {
+        "objectTypeName": null,
+        "serializationDataFormat": null
+      }
+    },
+    "serviceOKVEDName": {
+      "value": {},
+      "type": "Object",
+      "valueInfo": {
+        "objectTypeName": "java.util.LinkedHashMap",
+        "serializationDataFormat": "application/x-java-serialized-object"
+      }
+    },
+    "serviceCatalog": {
+      "value": {},
+      "type": "Object",
+      "valueInfo": {
+        "objectTypeName": "java.util.LinkedHashMap",
+        "serializationDataFormat": "application/x-java-serialized-object"
+      }
+    },
+    "productCountry": {
+      "value": "Российская Федерация",
+      "type": "String",
+      "valueInfo": {
+        "objectTypeName": null,
+        "serializationDataFormat": null
+      }
+    },
+    "isGroupCompany": {
+      "value": "0",
+      "type": "String",
+      "valueInfo": {
+        "objectTypeName": null,
+        "serializationDataFormat": null
+      }
+    },
+    "registrationYear": {
+      "value": "2020-08-04",
+      "type": "String",
+      "valueInfo": {
+        "objectTypeName": null,
+        "serializationDataFormat": null
+      }
+    },
+    "actualAddress": {
+      "value": "",
+      "type": "String",
+      "valueInfo": {
+        "objectTypeName": null,
+        "serializationDataFormat": null
+      }
+    },
+    "productSelectionButtons": {
+      "value": "",
+      "type": "String",
+      "valueInfo": {
+        "objectTypeName": null,
+        "serializationDataFormat": null
+      }
+    },
+    "productTableEditTitle": {
+      "value": "Добавить продукцию",
+      "type": "String",
+      "valueInfo": {
+        "objectTypeName": null,
+        "serializationDataFormat": null
+      }
+    },
+    "chatId": {
+      "value": "1859d0ca-c087-11ec-8440-96ea4cd2c13b",
+      "type": "String",
+      "valueInfo": {
+        "objectTypeName": null,
+        "serializationDataFormat": null
+      }
+    },
+    "additionalInformationApplication": {
+      "value": "",
+      "type": "String",
+      "valueInfo": {
+        "objectTypeName": null,
+        "serializationDataFormat": null
+      }
+    },
+    "experienceExportDeliveries": {
+      "value": "",
+      "type": "String",
+      "valueInfo": {
+        "objectTypeName": null,
+        "serializationDataFormat": null
+      }
+    },
+    "juridicalAddress": {
+      "value": "416000, Московская область, улица Ленина, дом 5",
+      "type": "String",
+      "valueInfo": {
+        "objectTypeName": null,
+        "serializationDataFormat": null
+      }
+    },
+    "industry": {
+      "value": [],
+      "type": "Object",
+      "valueInfo": {
+        "objectTypeName": "java.util.ArrayList",
+        "serializationDataFormat": "application/x-java-serialized-object"
+      }
+    },
+    "productTable": {
+      "value": [],
+      "type": "Object",
+      "valueInfo": {
+        "objectTypeName": "java.util.ArrayList",
+        "serializationDataFormat": "application/x-java-serialized-object"
+      }
+    },
+    "serviceTable": {
+      "value": [],
+      "type": "Object",
+      "valueInfo": {
+        "objectTypeName": "java.util.ArrayList",
+        "serializationDataFormat": "application/x-java-serialized-object"
+      }
+    },
+    "regionAdditionalCommentary": {
+      "value": "",
+      "type": "String",
+      "valueInfo": {
+        "objectTypeName": null,
+        "serializationDataFormat": null
+      }
+    },
+    "serviceValue": {
+      "value": "Анализ выбранного рынка по стандартным критериям",
+      "type": "String",
+      "valueInfo": {
+        "objectTypeName": null,
+        "serializationDataFormat": null
+      }
+    },
+    "productTnvdName": {
+      "value": {},
+      "type": "Object",
+      "valueInfo": {
+        "objectTypeName": "java.util.LinkedHashMap",
+        "serializationDataFormat": "application/x-java-serialized-object"
+      }
+    },
+    "marketShare": {
+      "value": "",
+      "type": "String",
+      "valueInfo": {
+        "objectTypeName": null,
+        "serializationDataFormat": null
+      }
+    },
+    "researchObjectives": {
+      "value": [],
+      "type": "Object",
+      "valueInfo": {
+        "objectTypeName": "java.util.ArrayList",
+        "serializationDataFormat": "application/x-java-serialized-object"
+      }
+    },
+    "client": {
+      "value": "2f237496-b9ec-4eb5-b239-17e24a39d078",
+      "type": "String",
+      "valueInfo": {
+        "objectTypeName": null,
+        "serializationDataFormat": null
+      }
+    },
+    "term": {
+      "value": "",
+      "type": "String",
+      "valueInfo": {
+        "objectTypeName": null,
+        "serializationDataFormat": null
+      }
+    },
+    "codeTnved": {
+      "value": "",
+      "type": "String",
+      "valueInfo": {
+        "objectTypeName": null,
+        "serializationDataFormat": null
+      }
+    },
+    "serviceId": {
+      "value": "e8cfa1dc-2523-43ae-b3b5-b84970958ad5",
+      "type": "String",
+      "valueInfo": {
+        "objectTypeName": null,
+        "serializationDataFormat": null
+      }
+    },
+    "amount": {
+      "value": "",
+      "type": "String",
+      "valueInfo": {
+        "objectTypeName": null,
+        "serializationDataFormat": null
+      }
+    },
+    "requiredVolumeService": {
+      "value": "",
+      "type": "String",
+      "valueInfo": {
+        "objectTypeName": null,
+        "serializationDataFormat": null
+      }
+    },
+    "inn": {
+      "value": "7701725181",
+      "type": "String",
+      "valueInfo": {
+        "objectTypeName": null,
+        "serializationDataFormat": null
+      }
+    },
+    "addInfo": {
+      "value": "",
+      "type": "String",
+      "valueInfo": {
+        "objectTypeName": null,
+        "serializationDataFormat": null
+      }
+    },
+    "groupCompanyName": {
+      "value": "",
+      "type": "String",
+      "valueInfo": {
+        "objectTypeName": null,
+        "serializationDataFormat": null
+      }
+    },
+    "attachList": {
+      "value": [
+        {
+          "authorFio": "",
+          "access": "edit",
+          "size": "0",
+          "attach_name": "additionalMaterials",
+          "id": 900,
+          "title": "Прикрепите сертификаты",
+          "mandatory": 0,
+          "isexist": 0,
+          "url": ""
+        },
+        {
+          "authorFio": "",
+          "access": "edit",
+          "size": "0",
+          "attach_name": "reportNotAcceptedFile",
+          "id": 950,
+          "title": "Документ с претензиями",
+          "mandatory": 0,
+          "isexist": 0,
+          "url": ""
+        },
+        {
+          "authorFio": "",
+          "access": "edit",
+          "size": "0",
+          "attach_name": "attachReport",
+          "id": 901,
+          "title": "Презентация и дополнительные материалы",
+          "mandatory": 0,
+          "isexist": 0,
+          "url": ""
+        },
+        {
+          "authorFio": "",
+          "access": "edit",
+          "size": "0",
+          "attach_name": "attachCertificates",
+          "id": 902,
+          "title": "Сертификат",
+          "mandatory": 0,
+          "isexist": 0,
+          "url": ""
+        },
+        {
+          "authorFio": "",
+          "access": "edit",
+          "size": "0",
+          "attach_name": "oversizedFile1",
+          "id": 903,
+          "title": "Сертификат",
+          "mandatory": 0,
+          "isexist": 0,
+          "url": ""
+        },
+        {
+          "authorFio": "",
+          "access": "edit",
+          "size": "0",
+          "attach_name": "documentsConfirmingTheFactOfTransportation",
+          "id": 904,
+          "title": "Сертификат",
+          "mandatory": 0,
+          "isexist": 0,
+          "url": ""
+        },
+        {
+          "authorFio": "",
+          "access": "edit",
+          "size": "0",
+          "attach_name": "otherDocumentsIfNecessary",
+          "id": 905,
+          "title": "Сертификат",
+          "mandatory": 0,
+          "isexist": 0,
+          "url": ""
+        },
+        {
+          "authorFio": "",
+          "access": "edit",
+          "size": "0",
+          "attach_name": "prepayFile",
+          "id": 915,
+          "title": "Сертификат",
+          "mandatory": 0,
+          "isexist": 0,
+          "url": ""
+        },
+        {
+          "authorFio": "",
+          "access": "edit",
+          "size": "0",
+          "attach_name": "contractForSign",
+          "id": 920,
+          "title": "Договор для подписания",
+          "mandatory": 0,
+          "isexist": 0,
+          "url": ""
+        },
+        {
+          "authorFio": "",
+          "access": "edit",
+          "size": "0",
+          "attach_name": "finalContract",
+          "id": 921,
+          "title": "Договор",
+          "mandatory": 0,
+          "isexist": 0,
+          "url": ""
+        },
+        {
+          "authorFio": "",
+          "access": "edit",
+          "size": "0",
+          "attach_name": "aktForSign",
+          "id": 930,
+          "title": "Акт для подписания",
+          "mandatory": 0,
+          "isexist": 0,
+          "url": ""
+        },
+        {
+          "authorFio": "",
+          "access": "edit",
+          "size": "0",
+          "attach_name": "finalAkt",
+          "id": 931,
+          "title": "Акт",
+          "mandatory": 0,
+          "isexist": 0,
+          "url": ""
+        }
+      ],
+      "type": "Object",
+      "valueInfo": {
+        "objectTypeName": "java.util.ArrayList",
+        "serializationDataFormat": "application/x-java-serialized-object"
+      }
+    },
+    "productCountryClone": {
+      "value": "Российская Федерация",
+      "type": "String",
+      "valueInfo": {
+        "objectTypeName": null,
+        "serializationDataFormat": null
+      }
+    },
+    "attachCertificates": {
+      "value": [],
+      "type": "Object",
+      "valueInfo": {
+        "objectTypeName": "java.util.ArrayList",
+        "serializationDataFormat": "application/x-java-serialized-object"
+      }
+    },
+    "exportCountries": {
+      "value": [],
+      "type": "Object",
+      "valueInfo": {
+        "objectTypeName": "java.util.ArrayList",
+        "serializationDataFormat": "application/x-java-serialized-object"
+      }
+    },
+    "countryStudy": {
+      "value": [],
+      "type": "Object",
+      "valueInfo": {
+        "objectTypeName": "java.util.ArrayList",
+        "serializationDataFormat": "application/x-java-serialized-object"
+      }
+    },
+    "countryRegionStudy": {
+      "value": [],
+      "type": "Object",
+      "valueInfo": {
+        "objectTypeName": "java.util.ArrayList",
+        "serializationDataFormat": "application/x-java-serialized-object"
+      }
+    }
+  },
+  "task": {
+    "username": "03ad656a-a6ca-4b21-b9f8-72b99ec9e463",
+    "id": "21615eea-c087-11ec-8440-96ea4cd2c13b",
+    "name": "Формирование заявки",
+    "created": "2022-04-20T08:51:55.479+0000",
+    "completed": null,
+    "due": null,
+    "assignee": "03ad656a-a6ca-4b21-b9f8-72b99ec9e463",
+    "fio": "Петр Иванович ОТР",
+    "priority": 50,
+    "formKey": null,
+    "formUrl": null,
+    "linkType": null,
+    "status": "accepted",
+    "processInstanceId": "1859d0ca-c087-11ec-8440-96ea4cd2c13b",
+    "camundaId": "camunda-exp-search",
+    "executionId": "216074e4-c087-11ec-8440-96ea4cd2c13b",
+    "processDefinitionId": "d68edfc0-bf4c-11ec-8e3f-86e7f82199c9",
+    "taskDefinitionKey": "Task_0spp2v0",
+    "processDefinitionKey": null,
+    "role": "exporter",
+    "orgId": null,
+    "taskLabels": []
+  },
+  "uiSchema": {
+    "uiFormType": {
+      "type": "json",
+      "withSteps": true
+    },
+    "isFormFullScreen": true,
+    "serviceTitle": "Анализ выбранного рынка по стандартным критериям",
+    "serviceDescription": null,
+    "formTitle": null,
+    "uiSteps": {
+      "current": 1,
+      "names": [
+        "Формирование запроса",
+        "Выбор исполнителя",
+        "Заключение договора",
+        "Подписание акта",
+        "Оценка исполнителя"
+      ],
+      "count": 5
+    },
+    "navigationButtons": {
+      "next": {
+        "label": "Далее"
+      },
+      "cancel": {
+        "hide": false
+      }
+    },
+    "onChangeHandler": "function onChangeHandler({ errors, fieldsMap, values }) { const updatedFields = { ...fieldsMap }; const updatedValues = { ...values }; if (!!updatedValues.rowsNumber) { if (updatedValues.serviceTableEditTitle !== 'Изменить услугу') { updatedValues.serviceTableEditTitle = 'Изменить услугу'; } if (updatedValues.productTableEditTitle !== 'Изменить продукцию') { updatedValues.productTableEditTitle = 'Изменить продукцию'; } const group = document.querySelector('[class^=KrGroupButtons]'); if (group) { group.setAttribute('style', 'display: none'); updatedValues.productSelectionButtons = null; } } else { if (!updatedValues.productSelectionButtons) { updatedValues.productSelectionButtons = '1'; } if (updatedValues.serviceTableEditTitle === 'Изменить услугу') { updatedValues.serviceTableEditTitle = 'Добавить услугу'; } if (updatedValues.productTableEditTitle === 'Изменить продукцию') { updatedValues.productTableEditTitle = 'Добавить продукцию'; } const group = document.querySelector('[class^=KrGroupButtons]'); if (group) { group.setAttribute('style', 'display: flex'); } } if (updatedValues.productSelectionButtons === '1') { const uploadedTnvd = updatedValues.productCatalog; const uploadedOkved = updatedValues.serviceCatalog; if (uploadedTnvd) { updatedValues.productTnvd = ''; updatedValues.productTnvdName = null; updatedValues.productCaption = uploadedTnvd.prodDescription; updatedValues.productTnvd = uploadedTnvd.codeTnved; updatedValues.productDescription = uploadedOkved?.naming || updatedValues.productDescription; updatedValues.productTnvdName = { value: uploadedTnvd.codeTnved, key: uploadedTnvd.key, }; } if (uploadedOkved) { updatedValues.serviceOkved = ''; updatedValues.serviceOKVEDName = null; updatedValues.serviceCaption = uploadedOkved.servDescription; updatedValues.serviceOkved = uploadedOkved.codeOkved; updatedValues.productDescription = uploadedOkved?.naming || updatedValues.productDescription; updatedValues.serviceOKVEDName = { value: uploadedOkved.codeOkved, key: uploadedOkved.key, }; } } if (updatedValues.productSelectionButtons === '2') { const newTnvd = updatedValues.productTnvdName; const newOkved = updatedValues.serviceOKVEDName; if (newTnvd) { updatedValues.productCatalog = null; updatedValues.productTnvd = newTnvd.codeTnved; } if (newOkved) { updatedValues.serviceCatalog = null; updatedValues.serviceOkved = newOkved.codeOcved; } } if (!updatedValues.productCountry.value) { updatedValues.productCountry = { value: 'Российская Федерация', key: '21b35792-6d8e-4e04-a5d2-a73b9efa8b91', }; } return { updatedValues, updatedFields, updatedErrors: { ...errors } };}",
+    "breadCrumbs": [],
+    "blocks": [
+      {
+        "name": "productTableEdit",
+        "title": "${productTableEditTitle}",
+        "rows": [
+          {
+            "columns": [
+              {
+                "gridAttributes": {
+                  "lg": 2
+                }
+              },
+              {
+                "gridAttributes": {
+                  "lg": 8
+                },
+                "id": "productSelectionButtons"
+              },
+              {
+                "gridAttributes": {
+                  "lg": 2
+                }
+              }
+            ]
+          },
+          {
+            "columns": [
+              {
+                "gridAttributes": {
+                  "lg": 12
+                },
+                "id": "productCatalog"
+              }
+            ]
+          },
+          {
+            "columns": [
+              {
+                "gridAttributes": {
+                  "lg": 12
+                },
+                "id": "productTnvdName"
+              }
+            ]
+          },
+          {
+            "columns": [
+              {
+                "gridAttributes": {
+                  "lg": 8
+                },
+                "id": "productCaption"
+              },
+              {
+                "gridAttributes": {
+                  "lg": 4
+                },
+                "id": "productTnvd"
+              }
+            ]
+          },
+          {
+            "columns": [
+              {
+                "gridAttributes": {
+                  "lg": 12
+                },
+                "id": "productDescription"
+              }
+            ]
+          },
+          {
+            "columns": [
+              {
+                "gridAttributes": {
+                  "lg": 12
+                },
+                "id": "productCountry"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "serviceTableEdit",
+        "title": "${serviceTableEditTitle}",
+        "rows": [
+          {
+            "columns": [
+              {
+                "gridAttributes": {
+                  "lg": 2
+                }
+              },
+              {
+                "gridAttributes": {
+                  "lg": 8
+                },
+                "id": "productSelectionButtons"
+              },
+              {
+                "gridAttributes": {
+                  "lg": 2
+                }
+              }
+            ]
+          },
+          {
+            "columns": [
+              {
+                "gridAttributes": {
+                  "lg": 12
+                },
+                "id": "serviceCatalog"
+              }
+            ]
+          },
+          {
+            "columns": [
+              {
+                "gridAttributes": {
+                  "lg": 12
+                },
+                "id": "serviceOKVEDName"
+              }
+            ]
+          },
+          {
+            "columns": [
+              {
+                "gridAttributes": {
+                  "lg": 8
+                },
+                "id": "serviceCaption"
+              },
+              {
+                "gridAttributes": {
+                  "lg": 4
+                },
+                "id": "serviceOkved"
+              }
+            ]
+          },
+          {
+            "columns": [
+              {
+                "gridAttributes": {
+                  "lg": 12
+                },
+                "id": "productDescription"
+              }
+            ]
+          },
+          {
+            "columns": [
+              {
+                "gridAttributes": {
+                  "lg": 12
+                },
+                "id": "productCountry"
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "rows": [
+      {
+        "expansionPanel": {
+          "expandedByDefault": false,
+          "validateStatus": {
+            "default": "Заполните",
+            "success": "Заполнено",
+            "error": "Ошибка"
+          },
+          "title": "Информация о компании",
+          "status": "Статус",
+          "isDynamicStatus": true
+        },
+        "type": "formSeparator"
+      },
+      {
+        "columns": [
+          {
+            "gridAttributes": {
+              "lg": 12
+            },
+            "id": "15"
+          }
+        ]
+      },
+      {
+        "columns": [
+          {
+            "gridAttributes": {
+              "lg": 4
+            },
+            "id": "2"
+          },
+          {
+            "gridAttributes": {
+              "lg": 4
+            },
+            "id": "3"
+          },
+          {
+            "gridAttributes": {
+              "lg": 4
+            },
+            "id": "4"
+          }
+        ]
+      },
+      {
+        "columns": [
+          {
+            "gridAttributes": {
+              "lg": 12
+            },
+            "id": "5"
+          }
+        ]
+      },
+      {
+        "columns": [
+          {
+            "gridAttributes": {
+              "lg": 4
+            },
+            "id": "1"
+          },
+          {
+            "gridAttributes": {
+              "lg": 4
+            },
+            "id": "0"
+          }
+        ]
+      },
+      {
+        "columns": [
+          {
+            "gridAttributes": {
+              "lg": 12
+            },
+            "id": "7"
+          }
+        ]
+      },
+      {
+        "columns": [
+          {
+            "gridAttributes": {
+              "lg": 12
+            },
+            "id": "8"
+          }
+        ]
+      },
+      {
+        "columns": [
+          {
+            "gridAttributes": {
+              "lg": 12
+            },
+            "id": "9"
+          }
+        ]
+      },
+      {
+        "expansionPanel": {
+          "expandedByDefault": false,
+          "validateStatus": {
+            "default": "Заполните",
+            "success": "Заполнено",
+            "error": "Ошибка"
+          },
+          "tooltip": "Информация подгружается из вашего профиля. Проверьте корректность заполненных данных и внесите корректировки (при необходимости)",
+          "title": "Контактная информация",
+          "tooltipProps": {
+            "tooltipPosition": "left"
+          },
+          "status": "Статус",
+          "isDynamicStatus": true
+        },
+        "type": "formSeparator"
+      },
+      {
+        "columns": [
+          {
+            "gridAttributes": {
+              "lg": 12
+            },
+            "id": "10"
+          }
+        ]
+      },
+      {
+        "columns": [
+          {
+            "gridAttributes": {
+              "lg": 12
+            },
+            "id": "11"
+          }
+        ]
+      },
+      {
+        "columns": [
+          {
+            "gridAttributes": {
+              "lg": 12
+            },
+            "id": "12"
+          }
+        ]
+      },
+      {
+        "columns": [
+          {
+            "gridAttributes": {
+              "lg": 12
+            },
+            "id": "13"
+          }
+        ]
+      },
+      {
+        "expansionPanel": {
+          "expandedByDefault": true,
+          "validateStatus": {
+            "default": "Заполните",
+            "success": "Заполнено",
+            "error": "Ошибка"
+          },
+          "title": "Уточняющие вопросы по услуге",
+          "status": "Статус",
+          "isDynamicStatus": true
+        },
+        "type": "formSeparator"
+      },
+      {
+        "columns": [
+          {
+            "gridAttributes": {
+              "lg": 12
+            },
+            "id": "objectiveInformation"
+          },
+          {
+            "gridAttributes": {
+              "lg": 12
+            },
+            "id": "businessGrowth"
+          },
+          {
+            "gridAttributes": {
+              "lg": 12
+            },
+            "id": "startExport"
+          },
+          {
+            "gridAttributes": {
+              "lg": 12
+            },
+            "id": "saveOrExpansion"
+          },
+          {
+            "gridAttributes": {
+              "lg": 12
+            },
+            "id": "other"
+          }
+        ]
+      },
+      {
+        "columns": [
+          {
+            "gridAttributes": {
+              "lg": 12
+            },
+            "id": "reserchObjectivesComment"
+          }
+        ]
+      },
+      {
+        "columns": [
+          {
+            "gridAttributes": {
+              "lg": 12
+            },
+            "id": "preferredSourcesMarketInformation-open"
+          },
+          {
+            "gridAttributes": {
+              "lg": 12
+            },
+            "id": "preferredSourcesMarketInformation-subscription"
+          }
+        ]
+      },
+      {
+        "columns": [
+          {
+            "gridAttributes": {
+              "lg": 12
+            },
+            "id": "requiredVolumeService-base"
+          },
+          {
+            "gridAttributes": {
+              "lg": 12
+            },
+            "id": "requiredVolumeService-extended"
+          },
+          {
+            "gridAttributes": {
+              "lg": 12
+            },
+            "id": "requiredVolumeService-exhaustive"
+          }
+        ]
+      },
+      {
+        "columns": [
+          {
+            "typographyProps": {
+              "variant": "h5",
+              "text": "Опыт экспортных поставок"
+            },
+            "gridAttributes": {
+              "lg": 12
+            },
+            "type": "typography"
+          }
+        ]
+      },
+      {
+        "columns": [
+          {
+            "gridAttributes": {
+              "lg": 12
+            },
+            "id": "experienceExportDeliveries-yes"
+          },
+          {
+            "gridAttributes": {
+              "lg": 12
+            },
+            "id": "experienceExportDeliveries-no"
+          }
+        ]
+      },
+      {
+        "columns": [
+          {
+            "gridAttributes": {
+              "lg": 12
+            },
+            "id": "exportCountries"
+          }
+        ]
+      },
+      {
+        "columns": [
+          {
+            "gridAttributes": {
+              "lg": 12
+            },
+            "id": "less100000"
+          },
+          {
+            "gridAttributes": {
+              "lg": 12
+            },
+            "id": "from100000to1000000"
+          },
+          {
+            "gridAttributes": {
+              "lg": 12
+            },
+            "id": "more1000000"
+          }
+        ]
+      },
+      {
+        "columns": [
+          {
+            "typographyProps": {
+              "variant": "h5",
+              "text": "Информация о продукции/услуге"
+            },
+            "gridAttributes": {
+              "lg": 12
+            },
+            "type": "typography"
+          }
+        ]
+      },
+      {
+        "columns": [
+          {
+            "gridAttributes": {
+              "lg": 12
+            },
+            "id": "export-0"
+          },
+          {
+            "gridAttributes": {
+              "lg": 12
+            },
+            "id": "export-1"
+          }
+        ]
+      },
+      {
+        "columns": [
+          {
+            "gridAttributes": {
+              "lg": 12
+            },
+            "id": "productTooltip"
+          }
+        ]
+      },
+      {
+        "columns": [
+          {
+            "gridAttributes": {
+              "lg": 12
+            },
+            "id": "productTable"
+          }
+        ]
+      },
+      {
+        "columns": [
+          {
+            "gridAttributes": {
+              "lg": 12
+            },
+            "id": "serviceTable"
+          },
+          {
+            "gridAttributes": {
+              "lg": 12
+            },
+            "id": "industry"
+          }
+        ]
+      },
+      {
+        "columns": [
+          {
+            "gridAttributes": {
+              "lg": 12
+            },
+            "id": "productsScope"
+          }
+        ]
+      },
+      {
+        "columns": [
+          {
+            "gridAttributes": {
+              "lg": 12
+            },
+            "id": "certified-yes"
+          },
+          {
+            "gridAttributes": {
+              "lg": 12
+            },
+            "id": "certified-no"
+          }
+        ]
+      },
+      {
+        "columns": [
+          {
+            "gridAttributes": {
+              "lg": 12
+            },
+            "id": "attachCertificates"
+          }
+        ]
+      },
+      {
+        "columns": [
+          {
+            "gridAttributes": {
+              "lg": 12
+            },
+            "id": "indicateCompetitiveAdvantagesProductService"
+          }
+        ]
+      },
+      {
+        "columns": [
+          {
+            "gridAttributes": {
+              "lg": 12
+            },
+            "id": "marketShare"
+          }
+        ]
+      },
+      {
+        "columns": [
+          {
+            "gridAttributes": {
+              "lg": 12
+            },
+            "id": "auditory"
+          }
+        ]
+      },
+      {
+        "columns": [
+          {
+            "typographyProps": {
+              "variant": "h5",
+              "text": "Целевые страны исследования"
+            },
+            "gridAttributes": {
+              "lg": 12
+            },
+            "type": "typography"
+          }
+        ]
+      },
+      {
+        "columns": [
+          {
+            "gridAttributes": {
+              "lg": 12
+            },
+            "id": "selected-region"
+          },
+          {
+            "gridAttributes": {
+              "lg": 12
+            },
+            "id": "selected-country"
+          }
+        ]
+      },
+      {
+        "columns": [
+          {
+            "gridAttributes": {
+              "lg": 12
+            },
+            "id": "countryRegionStudy"
+          }
+        ]
+      },
+      {
+        "columns": [
+          {
+            "gridAttributes": {
+              "lg": 12
+            },
+            "id": "countryStudy"
+          }
+        ]
+      },
+      {
+        "columns": [
+          {
+            "gridAttributes": {
+              "lg": 12
+            },
+            "id": "regionAdditionalCommentary"
+          }
+        ]
+      },
+      {
+        "columns": [
+          {
+            "gridAttributes": {
+              "lg": 12
+            },
+            "id": "additionalMaterials"
+          }
+        ]
+      },
+      {
+        "columns": [
+          {
+            "gridAttributes": {
+              "lg": 12
+            },
+            "id": "additionalInformationApplication"
+          }
+        ]
+      },
+      {
+        "expansionPanel": {
+          "expandedByDefault": true,
+          "validateStatus": {
+            "default": "Заполните",
+            "success": "Заполнено",
+            "error": "Ошибка"
+          },
+          "title": "Параметры запроса",
+          "isDynamicStatus": true
+        },
+        "type": "formSeparator"
+      },
+      {
+        "columns": [
+          {
+            "gridAttributes": {
+              "lg": 12
+            },
+            "id": "term"
+          }
+        ]
+      },
+      {
+        "columns": [
+          {
+            "gridAttributes": {
+              "lg": 12
+            },
+            "id": "amount"
+          }
+        ]
+      }
+    ],
+    "fields": {
+      "fullCompanyName": {
+        "readonly": true,
+        "id": "15",
+        "label": "Полное наименование компании на русском языке",
+        "type": "String",
+        "value": null
+      },
+      "inn": {
+        "readonly": true,
+        "id": "2",
+        "label": "ИНН",
+        "type": "String",
+        "value": null
+      },
+      "ogrn": {
+        "readonly": true,
+        "id": "3",
+        "label": "ОГРН",
+        "type": "String",
+        "value": null
+      },
+      "registrationYear": {
+        "readonly": true,
+        "id": "4",
+        "label": "Год регистрации",
+        "type": "String",
+        "value": null
+      },
+      "companyDirector": {
+        "readonly": true,
+        "id": "5",
+        "label": "Руководитель компании (ФИО)",
+        "type": "String",
+        "value": null
+      },
+      "isGroupCompany": {
+        "data": [
+          {
+            "label": "Да",
+            "value": "Да",
+            "key": "1"
+          },
+          {
+            "label": "Нет",
+            "value": "Нет",
+            "key": "0"
+          }
+        ],
+        "readonly": true,
+        "uiType": "radio",
+        "tooltip": "Укажите название группы, если выбрано Да",
+        "id": "6",
+        "label": "Входит в группу компаний",
+        "type": "String",
+        "value": null
+      },
+      "groupCompanyName": {
+        "visible": false,
+        "readonly": true,
+        "id": "7",
+        "label": "Название группы компаний",
+        "type": "String",
+        "conditionals": [
+          {
+            "equalValue": "Да",
+            "equalName": "isGroupCompany",
+            "type": "visible"
+          }
+        ],
+        "value": null
+      },
+      "juridicalAddress": {
+        "readonly": true,
+        "id": "8",
+        "label": "Юридический адрес",
+        "type": "String",
+        "value": null
+      },
+      "actualAddress": {
+        "readonly": false,
+        "id": "9",
+        "label": "Фактический адрес",
+        "type": "String",
+        "value": null
+      },
+      "contact": {
+        "isHideRequiredStar": true,
+        "id": "10",
+        "label": "Ответственное контактное лицо",
+        "type": "String",
+        "value": null,
+        "constraints": [
+          {
+            "name": "NotNull"
+          },
+          {
+            "name": "Size",
+            "attributes": {
+              "max": 512
+            }
+          }
+        ]
+      },
+      "eMail": {
+        "isHideRequiredStar": true,
+        "id": "11",
+        "label": "E-mail",
+        "type": "String",
+        "value": null,
+        "constraints": [
+          {
+            "name": "NotNull"
+          },
+          {
+            "name": "Pattern",
+            "attributes": {
+              "regexp": "^.+@.+\\.\\S+$",
+              "message": "email не соответствует формату"
+            }
+          },
+          {
+            "name": "Size",
+            "attributes": {
+              "max": 50
+            }
+          }
+        ]
+      },
+      "phone": {
+        "isHideRequiredStar": true,
+        "id": "12",
+        "label": "Телефон",
+        "type": "String",
+        "value": null,
+        "constraints": [
+          {
+            "name": "NotNull"
+          },
+          {
+            "name": "Pattern",
+            "attributes": {
+              "mask": [
+                "+",
+                "/[0-9]/",
+                "(",
+                "/[0-9]/",
+                "/[0-9]/",
+                "/[0-9]/",
+                ")",
+                "/[0-9]/",
+                "/[0-9]/",
+                "/[0-9]/",
+                "-",
+                "/[0-9]/",
+                "/[0-9]/",
+                "-",
+                "/[0-9]/",
+                "/[0-9]/"
+              ]
+            }
+          },
+          {
+            "name": "Size",
+            "attributes": {
+              "min": "16",
+              "message": "Введите номер телефона полностью"
+            }
+          }
+        ],
+        "maxMultiple": 2
+      },
+      "addInfo": {
+        "tooltip": "В этом поле вы можете оставить любую дополнительную информацию",
+        "id": "13",
+        "label": "Прочая информация",
+        "type": "String",
+        "tooltipProps": {
+          "tooltipPosition": "left"
+        },
+        "value": null
+      },
+      "codeTnved": {
+        "visible": false,
+        "readonly": true,
+        "multiline": false,
+        "multiple": false,
+        "id": "codeTnved",
+        "type": "String"
+      },
+      "codeOkved": {
+        "visible": false,
+        "readonly": true,
+        "multiline": false,
+        "multiple": false,
+        "id": "codeOkved",
+        "type": "String"
+      },
+      "productSelectionButtons": {
+        "buttons": [
+          {
+            "disabled": false,
+            "id": "1",
+            "label": "Выбрать из моего каталога"
+          },
+          {
+            "disabled": false,
+            "id": "2",
+            "label": "Добавить новую"
+          }
+        ],
+        "uiType": "groupButtons",
+        "activeButton": "1",
+        "id": "productSelectionButtons"
+      },
+      "productCatalog": {
+        "readonly": false,
+        "multiline": false,
+        "multiple": false,
+        "uiType": "reference",
+        "description": "",
+        "requestParams": {
+          "additionalFields": {
+            "prodDescription": "caption",
+            "naming": "tnved.caption",
+            "codeTnved": "tnved.code"
+          },
+          "resultObjectParams": {
+            "name": ["tnved.code", "caption"],
+            "key": "uuid"
+          },
+          "filters": [
+            {
+              "name": "caption_like"
+            },
+            {
+              "name": "goodsType",
+              "value": "goods"
+            },
+            {
+              "valueFromField": "client",
+              "name": "org.uuid"
+            }
+          ],
+          "params": {
+            "queryParams": {
+              "showRefs": 1,
+              "size": 10,
+              "showDetails": 1
+            },
+            "relativeUrl": "api/v1/catalogs/org_goods/items/search"
+          }
+        },
+        "label": "Каталог товаров",
+        "id": "productCatalog",
+        "type": "String",
+        "conditionals": [
+          {
+            "equalValue": "1",
+            "equalName": "productSelectionButtons",
+            "type": "visible"
+          },
+          {
+            "equalValue": "1",
+            "equalName": "export",
+            "type": "noNeedValidate"
+          }
+        ],
+        "constraints": [
+          {
+            "name": "NotNull"
+          }
+        ]
+      },
+      "serviceCatalog": {
+        "readonly": false,
+        "multiline": false,
+        "multiple": false,
+        "uiType": "reference",
+        "description": "",
+        "requestParams": {
+          "additionalFields": {
+            "codeOkved": "okved.code",
+            "naming": "okved.caption",
+            "servDescription": "caption"
+          },
+          "resultObjectParams": {
+            "name": ["okved.code", "caption"],
+            "key": "uuid"
+          },
+          "filters": [
+            {
+              "name": "caption_like"
+            },
+            {
+              "name": "goodsType",
+              "value": "service"
+            },
+            {
+              "valueFromField": "client",
+              "name": "org.uuid"
+            }
+          ],
+          "params": {
+            "queryParams": {
+              "showRefs": 1,
+              "size": 10,
+              "showDetails": 1
+            },
+            "relativeUrl": "api/v1/catalogs/org_goods/items/search"
+          }
+        },
+        "label": "Каталог услуг",
+        "id": "serviceCatalog",
+        "type": "String",
+        "conditionals": [
+          {
+            "equalValue": "1",
+            "equalName": "productSelectionButtons",
+            "type": "visible"
+          },
+          {
+            "equalValue": "0",
+            "equalName": "export",
+            "type": "noNeedValidate"
+          }
+        ],
+        "constraints": [
+          {
+            "name": "NotNull"
+          }
+        ]
+      },
+      "serviceOKVEDName": {
+        "uiType": "reference",
+        "requestParams": {
+          "additionalFields": {
+            "naming": "caption",
+            "servDescription": "description",
+            "codeOcved": "code"
+          },
+          "resultObjectParams": {
+            "name": ["code", "caption"],
+            "key": "uuid"
+          },
+          "filters": [
+            {
+              "name": "%context_filter"
+            }
+          ],
+          "params": {
+            "headers": {},
+            "queryParams": {
+              "showRefs": 0,
+              "size": 10,
+              "showDetails": 0
+            },
+            "relativeUrl": "api/v1/catalogs/okved/items/search"
+          }
+        },
+        "id": "serviceOKVEDName",
+        "label": "Справочник ОКВЭД",
+        "placeholder": "-",
+        "type": "String",
+        "conditionals": [
+          {
+            "equalValue": "2",
+            "equalName": "productSelectionButtons",
+            "type": "visible"
+          },
+          {
+            "equalValue": "0",
+            "equalName": "export",
+            "type": "noNeedValidate"
+          }
+        ],
+        "constraints": [
+          {
+            "name": "NotNull"
+          }
+        ]
+      },
+      "productTnvdName": {
+        "uiType": "reference",
+        "tooltip": "В случае, если у вас есть затруднения с кодом ТН ВЭД, можете воспользоваться <a href='https://market-search.exportcenter.ru/' target='_blank'>Сервисом</a> по поиску рынков сбыта",
+        "requestParams": {
+          "additionalFields": {
+            "prodDescription": "description",
+            "naming": "caption",
+            "codeTnved": "code"
+          },
+          "resultObjectParams": {
+            "name": ["code", "caption"],
+            "key": "uuid"
+          },
+          "filters": [
+            {
+              "name": "%context_filter"
+            }
+          ],
+          "params": {
+            "headers": {},
+            "queryParams": {
+              "showRefs": 0,
+              "size": 10,
+              "showDetails": 0
+            },
+            "relativeUrl": "api/v1/catalogs/tnved/items/search"
+          }
+        },
+        "id": "productTnvdName",
+        "label": "Справочник ТН ВЭД",
+        "placeholder": "-",
+        "type": "String",
+        "conditionals": [
+          {
+            "equalValue": "2",
+            "equalName": "productSelectionButtons",
+            "type": "visible"
+          },
+          {
+            "equalValue": "1",
+            "equalName": "export",
+            "type": "noNeedValidate"
+          }
+        ],
+        "constraints": [
+          {
+            "name": "NotNull"
+          }
+        ]
+      },
+      "productCaption": {
+        "multiline": false,
+        "multiple": false,
+        "tooltip": "Например, Чипсы 'Lays'  с солью, или Шоколад молочный 'Аленка'",
+        "id": "productCaption",
+        "label": "Наименование",
+        "type": "String",
+        "conditionals": [
+          {
+            "equalValue": "1",
+            "equalName": "productSelectionButtons",
+            "type": "readonly"
+          },
+          {
+            "equalValue": "1",
+            "equalName": "export",
+            "type": "noNeedValidate"
+          }
+        ],
+        "constraints": [
+          {
+            "name": "NotNull"
+          }
+        ]
+      },
+      "serviceCaption": {
+        "multiline": false,
+        "multiple": false,
+        "tooltip": "Например, Чипсы 'Lays' с солью, или Шоколад молочный 'Аленка'",
+        "id": "serviceCaption",
+        "label": "Наименование",
+        "type": "String",
+        "conditionals": [
+          {
+            "equalValue": "1",
+            "equalName": "productSelectionButtons",
+            "type": "readonly"
+          },
+          {
+            "equalValue": "0",
+            "equalName": "export",
+            "type": "noNeedValidate"
+          }
+        ],
+        "constraints": [
+          {
+            "name": "NotNull"
+          }
+        ]
+      },
+      "serviceOkved": {
+        "readonly": true,
+        "multiline": false,
+        "multiple": false,
+        "label": "ОКВЭД",
+        "id": "serviceOkved",
+        "type": "String"
+      },
+      "productTnvd": {
+        "readonly": true,
+        "multiline": false,
+        "multiple": false,
+        "id": "productTnvd",
+        "label": "ТН ВЭД",
+        "type": "String",
+        "constraints": [
+          {
+            "name": "Size",
+            "attributes": {
+              "min": 6,
+              "message": "Не меньше 6 цифр в ТН ВЭД"
+            }
+          }
+        ]
+      },
+      "productDescription": {
+        "multiline": false,
+        "multiple": false,
+        "id": "productDescription",
+        "label": "Описание",
+        "type": "String",
+        "constraints": [
+          {
+            "name": "NotNull"
+          }
+        ]
+      },
+      "productCountry": {
+        "readonly": false,
+        "uiType": "reference",
+        "multiple": false,
+        "requestParams": {
+          "resultObjectParams": {
+            "name": "reportShortName",
+            "key": "uuid"
+          },
+          "filters": [
+            {
+              "name": "or",
+              "value": [
+                {
+                  "name": "reportShortName_like_ci"
+                }
+              ]
+            }
+          ],
+          "params": {
+            "headers": {},
+            "queryParams": {},
+            "relativeUrl": "api/v1/catalogs/country/items/search?page=0&size=100&sort=reportShortName&showRefs=1"
+          }
+        },
+        "id": "productCountry",
+        "label": "Страна происхождения",
+        "placeholder": "Выберите страну",
+        "type": "String",
+        "constraints": [
+          {
+            "name": "NotNull"
+          }
+        ]
+      },
+      "researchObjectives": {
+        "data": [
+          {
+            "label": "Получение объективной информации о выбранном рынке для принятия управленческих решений внутри компании",
+            "value": "objectiveInformation",
+            "key": "objectiveInformation"
+          },
+          {
+            "label": "Рост бизнеса / увеличение выручки за счет выхода на зарубежный рынок",
+            "value": "businessGrowth",
+            "key": "businessGrowth"
+          },
+          {
+            "label": "Старт проработки направления экспортной деятельности (экспортный бизнес-план, бизнес-модель присутствия на рынке, получение сертификатов, поиск покупателя, проч.)",
+            "value": "startExport",
+            "key": "startExport"
+          },
+          {
+            "label": "Сохранение/развитие присутствия на уже освоенном экспортном рынке или экспансия на новый рынок",
+            "value": "saveOrExpansion",
+            "key": "saveOrExpansion"
+          },
+          {
+            "label": "Иное",
+            "value": "other",
+            "key": "other"
+          }
+        ],
+        "tooltip": "Укажите приоритетные цели получения отчета: например, оценка бизнеса, расширение действующего производства, изменение свойств товара с учетом специфики рынка и иное.",
+        "uiType": "checkbox",
+        "id": "researchObjectives",
+        "label": "Цели иследования",
+        "type": "String",
+        "tooltipProps": {
+          "tooltipPosition": "right"
+        },
+        "constraints": [
+          {
+            "name": "NotNull"
+          }
+        ]
+      },
+      "reserchObjectivesComment": {
+        "multiline": true,
+        "name": "reserchObjectivesComment",
+        "id": "reserchObjectivesComment",
+        "label": "Иное",
+        "type": "String",
+        "conditionals": [
+          {
+            "equalValue": "other",
+            "equalName": "researchObjectives",
+            "type": "visible"
+          }
+        ],
+        "constraints": [
+          {
+            "name": "NotNull"
+          }
+        ]
+      },
+      "preferredSourcesMarketInformation": {
+        "data": [
+          {
+            "tooltip": "Верхнеуровневое исследование, содержащее информацию из открытых источников (официальных баз данных, например UN ComTrade, открытых бизнес-медиа).",
+            "label": "Открытые",
+            "tooltipProps": {
+              "tooltipPosition": "right"
+            },
+            "value": "open",
+            "key": "preferredSourcesMarketInformation-open"
+          },
+          {
+            "tooltip": "Возможность углубленного исследования с использованием таких источников как например, Euromonitor Int., GfK, Nielsen, Frost&Sullivan, иных исследовательских компаний. Обратите внимание, что стоимость услуги с использованием платных источников по подписке может быть выше, чем при использовании открытых источников.",
+            "label": "По подписке",
+            "tooltipProps": {
+              "tooltipPosition": "right"
+            },
+            "value": "subscription",
+            "key": "preferredSourcesMarketInformation-subscription"
+          }
+        ],
+        "uiType": "checkbox",
+        "id": "preferredSourcesMarketInformation",
+        "label": "Предпочтительные источники информации о рынке?",
+        "type": "String",
+        "constraints": [
+          {
+            "name": "NotNull"
+          }
+        ]
+      },
+      "requiredVolumeService": {
+        "data": [
+          {
+            "tooltip": "Включает стандартизированное исследование рынка продукта/услуги в целевой стране по параметрам: объем рынка / продаж; динамика и тенденции; спрос и потребители; анализ конкурентной среды, действующих игроков и их преимуществ.",
+            "label": "Базовый",
+            "tooltipProps": {
+              "tooltipPosition": "right"
+            },
+            "value": "base",
+            "key": "requiredVolumeService-base"
+          },
+          {
+            "tooltip": "Кроме базового объема, содержит более детальное исследование аспектов цены, спроса, конкурентной среды на рынке.",
+            "label": "Расширенный",
+            "tooltipProps": {
+              "tooltipPosition": "right"
+            },
+            "value": "extended",
+            "key": "requiredVolumeService-extended"
+          },
+          {
+            "tooltip": "Содержит, помимо расширенного, также исследование маржинальности рынка целевого товара и его потенциала, логистические нюансы, сравнительный анализ ключевых игроков по мощностям, конкурентным преимуществам, финансовым показателям, внедрению инноваций и проч.",
+            "label": "Исчерпывающий",
+            "tooltipProps": {
+              "tooltipPosition": "right"
+            },
+            "value": "exhaustive",
+            "key": "requiredVolumeService-exhaustive"
+          }
+        ],
+        "uiType": "radio",
+        "id": "requiredVolumeService",
+        "label": "Выберите необходимый объем услуги",
+        "type": "String",
+        "constraints": [
+          {
+            "name": "NotNull"
+          }
+        ]
+      },
+      "experienceExportDeliveries": {
+        "data": [
+          {
+            "label": "Да",
+            "value": "experienceExportDeliveries-yes",
+            "key": "experienceExportDeliveries-yes"
+          },
+          {
+            "label": "Нет",
+            "value": "experienceExportDeliveries-no",
+            "key": "experienceExportDeliveries-no"
+          }
+        ],
+        "uiType": "radio",
+        "id": "experienceExportDeliveries",
+        "label": "Наличие опыта экспортных поставок",
+        "type": "String",
+        "constraints": [
+          {
+            "name": "NotNull"
+          }
+        ]
+      },
+      "exportCountries": {
+        "uiType": "reference",
+        "multiple": true,
+        "requestParams": {
+          "resultObjectParams": {
+            "name": "reportShortName",
+            "key": "uuid"
+          },
+          "filters": [
+            {
+              "name": "or",
+              "value": [
+                {
+                  "name": "reportShortName_like_ci"
+                }
+              ]
+            }
+          ],
+          "params": {
+            "headers": {},
+            "queryParams": {},
+            "relativeUrl": "api/v1/catalogs/country/items/search?page=0&size=100&sort=reportShortName&showRefs=1"
+          }
+        },
+        "inputType": "reference",
+        "id": "exportCountries",
+        "label": "Страны экспортных поставок за последние 3 года",
+        "type": "String",
+        "conditionals": [
+          {
+            "equalValue": "experienceExportDeliveries-yes",
+            "equalName": "experienceExportDeliveries",
+            "type": "visible"
+          }
+        ],
+        "constraints": [
+          {
+            "name": "NotNull"
+          }
+        ]
+      },
+      "exportVolume": {
+        "data": [
+          {
+            "label": "Меньше 100 000 $",
+            "value": "100000",
+            "key": "less100000"
+          },
+          {
+            "label": "100 000 $ - 1 000 000 $",
+            "value": "100000-1000000",
+            "key": "from100000to1000000"
+          },
+          {
+            "label": "Более 1 000 000 $",
+            "value": "1000000",
+            "key": "more1000000"
+          }
+        ],
+        "uiType": "radio",
+        "isHideRequiredStar": true,
+        "id": "exportVolume",
+        "label": "Объем экспортных поставок за последние 3 года",
+        "type": "String",
+        "conditionals": [
+          {
+            "equalValue": "experienceExportDeliveries-yes",
+            "equalName": "experienceExportDeliveries",
+            "type": "visible"
+          }
+        ],
+        "constraints": [
+          {
+            "name": "NotNull"
+          }
+        ]
+      },
+      "export": {
+        "data": [
+          {
+            "label": "Продукт",
+            "value": "0",
+            "key": "export-0"
+          },
+          {
+            "label": "Услуга",
+            "value": "1",
+            "key": "export-1"
+          }
+        ],
+        "uiType": "radio",
+        "name": "export",
+        "id": "export",
+        "type": "String",
+        "value": "export-1"
+      },
+      "productTooltip": {
+        "uiType": "typography",
+        "id": "productTooltip",
+        "text": "Не более 5 товарных позиций смежных категорий (в рамках одной отрасли), с указанием кода ТН ВЭД не менее 6 знаков. Если Вам известен 10-значный код ТН ВЭД на целевом рынке, просьба указывать его для получения более адресного исследования",
+        "conditionals": [
+          {
+            "equalValue": "0",
+            "equalName": "export",
+            "type": "visible"
+          }
+        ]
+      },
+      "productTable": {
+        "colsWidth": {
+          "0": "80px",
+          "1": "calc(60% - 164px)",
+          "2": "calc(40% - 164px)",
+          "3": "84px"
+        },
+        "showRowNumber": true,
+        "addRowButtonText": "+ Добавить продукцию",
+        "inputs": [
+          {
+            "dataIndex": "rowsNumber"
+          },
+          {
+            "dataIndex": "productCaption"
+          },
+          {
+            "dataIndex": "productTnvd"
+          }
+        ],
+        "headerCells": {
+          "0": "№",
+          "1": "НАИМЕНОВАНИЕ",
+          "2": "КОД ТН ВЭД",
+          "3": ""
+        },
+        "constraints": [
+          {
+            "name": "NotNull"
+          },
+          {
+            "name": "Size",
+            "attributes": {
+              "min": 1,
+              "max": 5,
+              "message": "Не более 5 товарных позиций"
+            }
+          }
+        ],
+        "isLoading": false,
+        "bodyCells": {
+          "0": "",
+          "1": "",
+          "2": "",
+          "3": "krDropdownMenu"
+        },
+        "editBlockName": "productTableEdit",
+        "uiType": "proTable",
+        "id": "productTable",
+        "conditionals": [
+          {
+            "equalValue": "0",
+            "equalName": "export",
+            "type": "visible"
+          }
+        ]
+      },
+      "serviceTable": {
+        "colsWidth": {
+          "0": "80px",
+          "1": "calc(60% - 164px)",
+          "2": "calc(40% - 164px)",
+          "3": "84px"
+        },
+        "showRowNumber": true,
+        "addRowButtonText": "+ Добавить услугу",
+        "inputs": [
+          {
+            "dataIndex": "rowsNumber"
+          },
+          {
+            "dataIndex": "serviceCaption"
+          },
+          {
+            "dataIndex": "serviceOkved"
+          }
+        ],
+        "headerCells": {
+          "0": "№",
+          "1": "НАИМЕНОВАНИЕ",
+          "2": "КОД ОКВЭД",
+          "3": ""
+        },
+        "constraints": [
+          {
+            "name": "NotNull"
+          }
+        ],
+        "isLoading": false,
+        "bodyCells": {
+          "0": "",
+          "1": "",
+          "2": "",
+          "3": "krDropdownMenu"
+        },
+        "editBlockName": "serviceTableEdit",
+        "uiType": "proTable",
+        "selectedRows": [],
+        "id": "serviceTable",
+        "conditionals": [
+          {
+            "equalValue": "1",
+            "equalName": "export",
+            "type": "visible"
+          }
+        ]
+      },
+      "industry": {
+        "uiType": "reference",
+        "multiple": true,
+        "tooltip": "Выберите отрасль, к которой относится указанная в заявке продукция",
+        "requestParams": {
+          "resultObjectParams": {
+            "name": "name",
+            "key": "uuid"
+          },
+          "filters": [
+            {
+              "name": "or",
+              "value": [
+                {
+                  "name": "caption_like"
+                }
+              ]
+            }
+          ],
+          "params": {
+            "headers": {},
+            "queryParams": {
+              "showRefs": 1,
+              "size": 400,
+              "page": 0
+            },
+            "relativeUrl": "api/v1/catalogs/acc_specializations/items/search"
+          }
+        },
+        "disabled": false,
+        "id": "industry",
+        "label": "Отрасль указанной продукции/услуги",
+        "tooltipProps": {
+          "tooltipPosition": "left"
+        },
+        "constraints": [
+          {
+            "name": "NotNull"
+          },
+          {
+            "name": "Size",
+            "attributes": {
+              "max": 1
+            }
+          }
+        ],
+        "maxMultiple": 1
+      },
+      "productsScope": {
+        "multiline": true,
+        "tooltip": "Опишите в каких отраслях, сферах деятельности и для каких целей применяется ваша продукция/услуги. Не более 500 символов.",
+        "id": "productsScope",
+        "label": "Сфера применения продукции",
+        "type": "String",
+        "tooltipProps": {
+          "tooltipPosition": "left"
+        },
+        "conditionals": [
+          {
+            "equalValue": "0",
+            "equalName": "export",
+            "type": "visible"
+          }
+        ],
+        "constraints": [
+          {
+            "name": "Size",
+            "attributes": {
+              "max": 500,
+              "message": "Не более 500 символов"
+            }
+          },
+          {
+            "name": "NotNull"
+          }
+        ]
+      },
+      "certifiedProduction": {
+        "readonly": false,
+        "data": [
+          {
+            "label": "Да",
+            "value": "yes",
+            "key": "certified-yes"
+          },
+          {
+            "label": "Нет",
+            "value": "no",
+            "key": "certified-no"
+          }
+        ],
+        "uiType": "radio",
+        "id": "certifiedProduction",
+        "label": "Сертифицирована ли продукция на целевых рынках?",
+        "type": "String",
+        "conditionals": [
+          {
+            "equalValue": "0",
+            "equalName": "export",
+            "type": "visible"
+          }
+        ]
+      },
+      "attachCertificates": {
+        "multiple": true,
+        "canDelete": true,
+        "id": "attachCertificates",
+        "label": "Прикрепить сертификаты",
+        "type": "File",
+        "conditionals": [
+          {
+            "equalValue": "yes",
+            "equalName": "certifiedProduction",
+            "type": "visible"
+          }
+        ],
+        "maxMultiple": 5
+      },
+      "indicateCompetitiveAdvantagesProductService": {
+        "multiline": true,
+        "multiple": false,
+        "id": "indicateCompetitiveAdvantagesProductService",
+        "label": "Укажите конкурентные преимущества вашего продукта/услуги",
+        "type": "String",
+        "constraints": [
+          {
+            "name": "Size",
+            "attributes": {
+              "max": 1000
+            }
+          }
+        ]
+      },
+      "marketShare": {
+        "multiline": true,
+        "tooltip": "При наличии информации укажите рыночную долю продукции на российском и/или на исследуемых рынках, если применимо/известно",
+        "id": "marketShare",
+        "label": "Доля рынка",
+        "type": "String",
+        "tooltipProps": {
+          "tooltipPosition": "left"
+        }
+      },
+      "auditory": {
+        "readonly": false,
+        "multiline": true,
+        "tooltip": "Укажите целевую аудиторию вашей продукции, возможных потребителей, если применимо/известно",
+        "multiple": false,
+        "id": "auditory",
+        "label": "Целевая аудитория",
+        "type": "String",
+        "tooltipProps": {
+          "tooltipPosition": "left"
+        }
+      },
+      "selectedGeographyArea": {
+        "data": [
+          {
+            "label": "Макрорегион",
+            "value": "selected-region",
+            "key": "selected-region"
+          },
+          {
+            "label": "Страны",
+            "value": "selected-country",
+            "key": "selected-country"
+          }
+        ],
+        "uiType": "radio",
+        "id": "selectedGeographyArea",
+        "label": "Выберите не более 3 стран или 1 макрорегион",
+        "constraints": [
+          {
+            "name": "NotNull"
+          }
+        ]
+      },
+      "countryRegionStudy": {
+        "uiType": "reference",
+        "multiple": true,
+        "requestParams": {
+          "resultObjectParams": {
+            "additionalFields": {
+              "name": "description",
+              "codeTnved": "uuid"
+            },
+            "name": "description",
+            "key": "uuid"
+          },
+          "filters": [
+            {
+              "name": "and",
+              "value": [
+                {
+                  "regionType": "macroregion"
+                }
+              ]
+            }
+          ],
+          "params": {
+            "headers": {},
+            "queryParams": {
+              "showRefs": 1,
+              "size": 400,
+              "page": 0
+            },
+            "relativeUrl": "api/v1/catalogs/world_region/items/search"
+          }
+        },
+        "disabled": false,
+        "id": "countryRegionStudy",
+        "label": "Регион исследования (укажите 1 макрорегион)",
+        "conditionals": [
+          {
+            "equalValue": "selected-region",
+            "equalName": "selectedGeographyArea",
+            "type": "visible"
+          }
+        ],
+        "constraints": [
+          {
+            "name": "NotNull"
+          },
+          {
+            "name": "Size",
+            "attributes": {
+              "max": 1
+            }
+          }
+        ],
+        "maxMultiple": 1
+      },
+      "countryStudy": {
+        "uiType": "reference",
+        "multiple": true,
+        "requestParams": {
+          "resultObjectParams": {
+            "name": "reportShortName",
+            "key": "uuid"
+          },
+          "filters": [
+            {
+              "name": "or",
+              "value": [
+                {
+                  "name": "reportShortName_like_ci"
+                }
+              ]
+            }
+          ],
+          "params": {
+            "headers": {},
+            "queryParams": {},
+            "relativeUrl": "api/v1/catalogs/country/items/search?page=0&size=100&sort=reportShortName&showRefs=1"
+          }
+        },
+        "disabled": false,
+        "id": "countryStudy",
+        "label": "Страны исследования (не более 3 стран)",
+        "conditionals": [
+          {
+            "equalValue": "selected-country",
+            "equalName": "selectedGeographyArea",
+            "type": "visible"
+          }
+        ],
+        "constraints": [
+          {
+            "name": "NotNull"
+          }
+        ],
+        "maxMultiple": 3
+      },
+      "regionAdditionalCommentary": {
+        "multiline": true,
+        "tooltip": "Если вы выбрали для исследования макрорегион из списка, укажите при желании более детальную информацию об интересующем регионе исследования. Например, при выборе варианта «Европа» - страны Прибалтики.",
+        "id": "regionAdditionalCommentary",
+        "label": "Дополнительный комментарий к региону",
+        "tooltipProps": {
+          "tooltipPosition": "left"
+        },
+        "type": "String",
+        "conditionals": [
+          {
+            "equalValue": "selected-region",
+            "equalName": "selectedGeographyArea",
+            "type": "visible"
+          }
+        ]
+      },
+      "additionalMaterials": {
+        "multiple": true,
+        "tooltip": "Прикрепите презентационные материалы о продукции/услугах/компании и иные материалы",
+        "canDelete": true,
+        "id": "additionalMaterials",
+        "label": "Презентация и дополнительные материалы по продукции",
+        "type": "File",
+        "tooltipProps": {
+          "tooltipPosition": "left"
+        },
+        "maxMultiple": 5
+      },
+      "additionalInformationApplication": {
+        "multiline": true,
+        "multiple": false,
+        "tooltip": "Укажите дополнительную информацию, необходимую, по вашему мнению, для выполнения услуги",
+        "id": "additionalInformationApplication",
+        "label": "Дополнительная информация, необходимая для выполнения услуги",
+        "type": "String",
+        "tooltipProps": {
+          "tooltipPosition": "left"
+        },
+        "constraints": [
+          {
+            "name": "Size",
+            "attributes": {
+              "max": 1000
+            }
+          }
+        ]
+      },
+      "term": {
+        "uiType": "krDropdown",
+        "tooltip": "Длительность сбора предложений (откликов) от исполнителей, в рабочих днях",
+        "isHideRequiredStar": true,
+        "id": "term",
+        "label": "Срок сбора откликов (раб. дней)",
+        "variants": [
+          {
+            "value": "2 дня",
+            "key": "0"
+          },
+          {
+            "value": "3 дня",
+            "key": "1"
+          },
+          {
+            "value": "4 дня",
+            "key": "2"
+          },
+          {
+            "value": "5 дней",
+            "key": "3"
+          },
+          {
+            "value": "6 дней",
+            "key": "4"
+          },
+          {
+            "value": "7 дней",
+            "key": "5"
+          }
+        ],
+        "tooltipProps": {
+          "tooltipPosition": "left"
+        },
+        "constraints": [
+          {
+            "name": "NotNull"
+          }
+        ]
+      },
+      "amount": {
+        "tooltip": "Укажите ориентировочный бюджет. При отсутствии понимания возможной стоимости услуги, оставьте поле пустым",
+        "id": "amount",
+        "label": "Бюджет на оказание услуги (руб.)",
+        "type": "String",
+        "tooltipProps": {
+          "tooltipPosition": "left"
+        },
+        "constraints": [
+          {
+            "name": "Pattern",
+            "attributes": {
+              "regexp": "^[\\d.,]+$",
+              "message": "Введите числовое значение"
+            }
+          }
+        ]
+      }
+    }
+  }
+}
