@@ -1,5 +1,5 @@
 .ComponentFuncToJsone {
-  max-width: 94%;
+  max-width: 800px;
   margin: 1%;
   padding: 2%;
   border: 1px solid rgba(0, 0, 0, 0.374);
@@ -12,6 +12,10 @@
 }
 .textarea {
   padding: 10px;
+  width: 96%;
+  resize: vertical;
+  background-color: rgba(254, 254, 254, 0.86);
+  border-radius: 6px;
 }
 .textarea-Bottom {
   margin-top: 20px;
@@ -19,10 +23,16 @@
   width: 200px;
   height: 36px;
   align-self: end;
+  font-size: 16px;
 }
 .Text {
+  border-radius: 6px;
   padding: 1%;
   border: 1px solid black;
+  min-height: 150px;
+  width: 96%;
+  resize: vertical;
+  background-color: rgba(255, 255, 255, 0.86);
 }
 .controll {
   margin-top: 10px;
@@ -31,9 +41,16 @@
   justify-content: end;
   align-items: center;
 }
+.textarea-tooltip {
+  margin-bottom: 7px;
+}
+.controll-tooltip {
+  margin-bottom: 7px;
+}
 .controll-text {
   font-size: 19px;
   margin-right: 50px;
+  color: green;
 }
 .Bottom {
   height: 36px;
