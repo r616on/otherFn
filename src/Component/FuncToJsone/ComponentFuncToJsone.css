@@ -6,6 +6,12 @@
   font-size: 16px;
   line-height: 1.5;
 }
+.title {
+  margin-top: 0;
+  margin-bottom: 20px;
+  margin-left: 20px;
+  font-weight: 500;
+}
 .textarea-row {
   display: flex;
   flex-direction: column;
@@ -24,10 +30,13 @@
   height: 36px;
   align-self: end;
   font-size: 16px;
+  border-radius: 6px;
+  border: 1px solid black;
 }
 .Text {
   border-radius: 6px;
   padding: 1%;
+
   border: 1px solid black;
   min-height: 150px;
   width: 96%;
@@ -53,6 +62,9 @@
   color: green;
 }
 .Bottom {
+  width: 200px;
   height: 36px;
   font-size: 16px;
+  border: 1px solid black;
+  border-radius: 6px;
 }

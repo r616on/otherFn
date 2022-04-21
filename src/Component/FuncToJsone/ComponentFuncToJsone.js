@@ -35,6 +35,9 @@ function ComponentFuncToJsone() {
   };
   return (
     <div className="ComponentFuncToJsone">
+      <h3 className="title">
+        Конвертер JS функций в onChangeHandler текст, для json
+      </h3>
       <div onDoubleClick={handlerCline} className="textarea-row">
         <div className="textarea-tooltip">Вставьте Js функцию: </div>
         <textarea
