@@ -1,26 +1,16 @@
 function onChangeHandler({ errors, fieldsMap, values }) {
   const updatedFields = { ...fieldsMap };
   const updatedValues = { ...values };
-
   if (updatedFields?.productTnvd) {
     updatedFields.productTnvd.validationSchema = {
-      maxLength: {
-        value: 4,
-        message: "Не более 4 цифр в ТН ВЭД",
-        path: "",
-      },
+      maxLength: { value: 4, message: "Не более 4 цифр в ТН ВЭД", path: "" },
     };
   }
   if (updatedFields?.serviceOkved) {
     updatedFields.serviceOkved.validationSchema = {
-      maxLength: {
-        value: 5,
-        message: "Не более 4 цифр в ОКВЭД",
-        path: "",
-      },
+      maxLength: { value: 5, message: "Не более 4 цифр в ОКВЭД", path: "" },
     };
   }
-
   if (!!updatedValues.rowsNumber) {
     if (updatedValues.serviceTableEditTitle !== "Изменить услугу") {
       updatedValues.serviceTableEditTitle = "Изменить услугу";

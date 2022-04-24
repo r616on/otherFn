@@ -1,4 +1,4 @@
-import funcToJson from "./compServiceFuncToJsone";
+import { funcToJson, jsonToFunc } from "./compServiceFuncToJsone";
 import "./ComponentFuncToJsone.css";
 import { useState } from "react";
 
@@ -10,7 +10,9 @@ function ComponentFuncToJsone() {
   const handelChange = (e) => {
     const value = e.target.value;
     setTextarea(value);
-    if (value !== "") {
+    if (value.includes('"onChangeHandler":')) {
+      setText(jsonToFunc(value));
+    } else if (value !== "") {
       setText(funcToJson(value));
     }
   };
