@@ -2,7 +2,17 @@ function onChangeHandler({ errors, fieldsMap, values }) {
   const updatedFields = { ...fieldsMap };
   const updatedValues = { ...values };
 
-  if (updatedFields?.productTnvd) {
+  if (
+    updatedFields?.productTnvd &&
+    updatedFields.productTnvd.validationSchema !==
+      {
+        maxLength: {
+          value: 4,
+          message: "Не более 4 цифр в ТН ВЭД",
+          path: "",
+        },
+      }
+  ) {
     updatedFields.productTnvd.validationSchema = {
       maxLength: {
         value: 4,
@@ -11,7 +21,17 @@ function onChangeHandler({ errors, fieldsMap, values }) {
       },
     };
   }
-  if (updatedFields?.serviceOkved) {
+  if (
+    updatedFields?.serviceOkved &&
+    updatedFields.serviceOkved.validationSchema !==
+      {
+        maxLength: {
+          value: 5,
+          message: "Не более 4 цифр в ОКВЭД",
+          path: "",
+        },
+      }
+  ) {
     updatedFields.serviceOkved.validationSchema = {
       maxLength: {
         value: 5,
@@ -94,17 +114,42 @@ function onChangeHandler({ errors, fieldsMap, values }) {
       key: "21b35792-6d8e-4e04-a5d2-a73b9efa8b91",
     };
   }
-  const { productTable = [] } = updatedValues;
-  if (productTable?.length >= 4) {
-    updatedFields.productTable.canAddRow = false;
+  if (updatedValues.contractAmount.length > 0) {
+    if (updatedFields?.amountJurContract) {
+      updatedFields.amountJurContract.validationSchema = {
+        required: {
+          html: undefined,
+          message: "Заполните поле",
+          path: undefined,
+        },
+      };
+    }
   } else {
-    updatedFields.productTable.canAddRow = true;
+    if (updatedFields?.amountJurContract) {
+      updatedFields.amountJurContract.validationSchema = {};
+    }
   }
-  const { serviceTable = [] } = updatedValues;
-  if (serviceTable?.length >= 4) {
-    updatedFields.serviceTable.canAddRow = false;
-  } else {
-    updatedFields.serviceTable.canAddRow = true;
+  if (
+    updatedValues?.jurisdiction &&
+    updatedValues.jurisdiction.includes("jurisdictionHelp-yes")
+  ) {
+    updatedValues.jurisdiction = ["jurisdictionHelp-yes"];
+    if (
+      updatedValues?.arbitrationCourtInfo &&
+      updatedValues.arbitrationCourtInfo !== ""
+    ) {
+      updatedValues.arbitrationCourtInfo = "";
+    }
+    if (updatedValues?.stateCourtInfo) {
+      updatedValues.stateCourtInfo = {};
+    }
   }
   return { updatedValues, updatedFields, updatedErrors: { ...errors } };
 }
+
+// if (referenceVariants?.docReference) {
+//   console.log(referenceVariants?.docReference[0].value);
+//   if (updatedFields?.attachReport) {
+//     updatedFields.attachReport.tooltip = `Предоставьте отчетные материалы, проект доработанного экспортного контракта, подготовленные в соответствии с разделом 3.1, соответствующие разделу 3.2 <a href=${referenceVariants?.docReference[0].value} target='_blank' rel='nofollow noopener'>стандарта</a>`;
+//   }
+// }

@@ -1,63 +1,23 @@
 function onChangeHandler({ errors, fieldsMap, values }) {
-  const updatedFields = { ...fieldsMap };
   const updatedValues = { ...values };
+  const updatedFields = { ...fieldsMap };
 
-  if (updatedFields?.productTnvd) {
-    updatedFields.productTnvd.validationSchema = {
-      maxLength: {
-        value: 4,
-        message: "Не более 4 цифр в ТН ВЭД",
-        path: "",
-      },
-    };
-  }
-  if (updatedFields?.serviceOkved) {
-    updatedFields.serviceOkved.validationSchema = {
-      maxLength: {
-        value: 5,
-        message: "Не более 4 цифр в ОКВЭД",
-        path: "",
-      },
-    };
+  if (updatedValues?.docLink && updatedValues?.docLink[0]?.link) {
+    if (updatedFields?.attachReport) {
+      updatedFields.attachReport.tooltip = `Предоставьте отчетные материалы, проект доработанного экспортного контракта, подготовленные в соответствии с разделом 3.1, соответствующие разделу 3.2 <a href=${updatedValues?.docLink[0]?.link} target='_blank' rel='nofollow noopener'>стандарта</a>`;
+    }
   }
 
-  if (!!updatedValues.rowsNumber) {
-    if (updatedValues.serviceTableEditTitle !== "Изменить услугу") {
-      updatedValues.serviceTableEditTitle = "Изменить услугу";
-    }
-    if (updatedValues.productTableEditTitle !== "Изменить продукцию") {
-      updatedValues.productTableEditTitle = "Изменить продукцию";
-    }
-    const group = document.querySelector("[class^=KrGroupButtons]");
-    if (group) {
-      group.setAttribute("style", "display: none");
-      updatedValues.productSelectionButtons = null;
-    }
-  } else {
-    if (!updatedValues.productSelectionButtons) {
-      updatedValues.productSelectionButtons = "1";
-    }
-    if (updatedValues.serviceTableEditTitle === "Изменить услугу") {
-      updatedValues.serviceTableEditTitle = "Добавить услугу";
-    }
-    if (updatedValues.productTableEditTitle === "Изменить продукцию") {
-      updatedValues.productTableEditTitle = "Добавить продукцию";
-    }
-    const group = document.querySelector("[class^=KrGroupButtons]");
-    if (group) {
-      group.setAttribute("style", "display: flex");
-    }
-  }
   if (updatedValues.productSelectionButtons === "1") {
     const uploadedTnvd = updatedValues.productCatalog;
     const uploadedOkved = updatedValues.serviceCatalog;
+
     if (uploadedTnvd) {
       updatedValues.productTnvd = "";
       updatedValues.productTnvdName = null;
       updatedValues.productCaption = uploadedTnvd.prodDescription;
       updatedValues.productTnvd = uploadedTnvd.codeTnved;
-      updatedValues.productDescription =
-        uploadedOkved?.naming || updatedValues.productDescription;
+      updatedValues.productDescription = uploadedTnvd.naming;
       updatedValues.productTnvdName = {
         value: uploadedTnvd.codeTnved,
         key: uploadedTnvd.key,
@@ -68,8 +28,7 @@ function onChangeHandler({ errors, fieldsMap, values }) {
       updatedValues.serviceOKVEDName = null;
       updatedValues.serviceCaption = uploadedOkved.servDescription;
       updatedValues.serviceOkved = uploadedOkved.codeOkved;
-      updatedValues.productDescription =
-        uploadedOkved?.naming || updatedValues.productDescription;
+      updatedValues.productDescription = uploadedOkved.naming;
       updatedValues.serviceOKVEDName = {
         value: uploadedOkved.codeOkved,
         key: uploadedOkved.key,
@@ -82,47 +41,20 @@ function onChangeHandler({ errors, fieldsMap, values }) {
     if (newTnvd) {
       updatedValues.productCatalog = null;
       updatedValues.productTnvd = newTnvd.codeTnved;
-    }
-    if (newOkved) {
+    } else if (newOkved) {
       updatedValues.serviceCatalog = null;
       updatedValues.serviceOkved = newOkved.codeOcved;
     }
   }
-  if (!updatedValues.productCountry.value) {
-    updatedValues.productCountry = {
-      value: "Российская Федерация",
-      key: "21b35792-6d8e-4e04-a5d2-a73b9efa8b91",
+  if (!updatedValues.estimatedTransportationCostCurrencyIndicativeRate.value) {
+    updatedValues.estimatedTransportationCostCurrencyIndicativeRate = {
+      value: "РОССИЙСКИЙ РУБЛЬ ",
+      key: "13727045-8b49-4bc3-923e-03d52bcf93ad",
     };
   }
-  if (updatedValues.contractAmount.length > 0) {
-    if (updatedFields?.amountJurContract) {
-      updatedFields.amountJurContract.validationSchema = {
-        required: {
-          html: undefined,
-          message: "Заполните поле",
-          path: undefined,
-        },
-      };
-    }
-  } else {
-    if (updatedFields?.amountJurContract) {
-      updatedFields.amountJurContract.validationSchema = {};
-    }
-  }
-  if (
-    updatedValues?.jurisdiction &&
-    updatedValues.jurisdiction.includes("jurisdictionHelp-yes")
-  ) {
-    updatedValues.jurisdiction = ["jurisdictionHelp-yes"];
-    if (
-      updatedValues?.arbitrationCourtInfo &&
-      updatedValues.arbitrationCourtInfo !== ""
-    ) {
-      updatedValues.arbitrationCourtInfo = "";
-    }
-    if (updatedValues?.stateCourtInfo) {
-      updatedValues.stateCourtInfo = {};
-    }
-  }
-  return { updatedValues, updatedFields, updatedErrors: { ...errors } };
+  return {
+    updatedValues,
+    updatedFields: [...fields],
+    updatedErrors: { ...errors },
+  };
 }
