@@ -1,24 +1,20 @@
-function onChangeHandler({ errors, fieldsMap, values }) {
-  const updatedFields = { ...fieldsMap };
-  const updatedValues = { ...values };
-  if (updatedFields?.productTnvd) {
+function onChangeHandler({ values: updatedValues, fieldsMap: updatedFields }) {
+  if (
+    updatedFields?.productTnvd &&
+    updatedFields?.productTnvd?.validationSchema?.minLength?.value !== 6
+  ) {
     updatedFields.productTnvd.validationSchema = {
-      maxLength: { value: 4, message: "Не более 4 цифр в ТН ВЭД", path: "" },
-    };
-  }
-  if (updatedFields?.serviceOkved) {
-    updatedFields.serviceOkved.validationSchema = {
-      maxLength: { value: 5, message: "Не более 4 цифр в ОКВЭД", path: "" },
+      minLength: { value: 6, message: "Не меньше 6 цифр в ТН ВЭД", path: "" },
     };
   }
   if (!!updatedValues.rowsNumber) {
     if (updatedValues.serviceTableEditTitle !== "Изменить услугу") {
       updatedValues.serviceTableEditTitle = "Изменить услугу";
     }
-    if (updatedValues.productTableEditTitle !== "Изменить продукцию") {
-      updatedValues.productTableEditTitle = "Изменить продукцию";
+    if (updatedValues.productTableEditTitle !== "Изменить товар") {
+      updatedValues.productTableEditTitle = "Изменить товар";
     }
-    const group = document.querySelector("[class^=KrGroupButtons]");
+    const group = document.querySelector("[class*=KrGroupButtons]");
     if (group) {
       group.setAttribute("style", "display: none");
       updatedValues.productSelectionButtons = null;
@@ -30,10 +26,10 @@ function onChangeHandler({ errors, fieldsMap, values }) {
     if (updatedValues.serviceTableEditTitle === "Изменить услугу") {
       updatedValues.serviceTableEditTitle = "Добавить услугу";
     }
-    if (updatedValues.productTableEditTitle === "Изменить продукцию") {
-      updatedValues.productTableEditTitle = "Добавить продукцию";
+    if (updatedValues.productTableEditTitle === "Изменить товар") {
+      updatedValues.productTableEditTitle = "Добавить товар";
     }
-    const group = document.querySelector("[class^=KrGroupButtons]");
+    const group = document.querySelector("[class*=KrGroupButtons]");
     if (group) {
       group.setAttribute("style", "display: flex");
     }
@@ -84,35 +80,11 @@ function onChangeHandler({ errors, fieldsMap, values }) {
       key: "21b35792-6d8e-4e04-a5d2-a73b9efa8b91",
     };
   }
-  if (updatedValues.contractAmount.length > 0) {
-    if (updatedFields?.amountJurContract) {
-      updatedFields.amountJurContract.validationSchema = {
-        required: {
-          html: undefined,
-          message: "Заполните поле",
-          path: undefined,
-        },
-      };
-    }
+  const { productTnvd = [] } = updatedValues;
+  if (productTnvd?.length >= 5) {
+    updatedFields.productTnvd.canAddRow = false;
   } else {
-    if (updatedFields?.amountJurContract) {
-      updatedFields.amountJurContract.validationSchema = {};
-    }
+    updatedFields.productTnvd.canAddRow = true;
   }
-  if (
-    updatedValues?.jurisdiction &&
-    updatedValues.jurisdiction.includes("jurisdictionHelp-yes")
-  ) {
-    updatedValues.jurisdiction = ["jurisdictionHelp-yes"];
-    if (
-      updatedValues?.arbitrationCourtInfo &&
-      updatedValues.arbitrationCourtInfo !== ""
-    ) {
-      updatedValues.arbitrationCourtInfo = "";
-    }
-    if (updatedValues?.stateCourtInfo) {
-      updatedValues.stateCourtInfo = {};
-    }
-  }
-  return { updatedValues, updatedFields, updatedErrors: { ...errors } };
+  return { updatedValues, updatedFields };
 }
