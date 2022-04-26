@@ -1,4 +1,5 @@
 import { funcToJson, jsonToFunc } from "./compServiceFuncToJsone";
+
 import "./ComponentFuncToJsone.css";
 import { useState } from "react";
 
@@ -37,9 +38,21 @@ function ComponentFuncToJsone() {
   };
   return (
     <div className="ComponentFuncToJsone">
-      <h3 className="title">
-        Конвертер JS функций в onChangeHandler текст, для json
-      </h3>
+      <h3 className="title">Конвертер для onChangeHandler </h3>
+      <h4 className="title-text">
+        Для конвертации JS функций в onChangeHandler текст втавьте
+        <span> 'function onChangeHandler...'</span>
+      </h4>
+
+      <div className="title-text">
+        Для конвертации onChangeHandler в js func вставьте
+        <span> ' "onChangeHandler": "function... '</span>
+        <span className="title-tooltip">
+          Важно наличие <span>одного</span> пробела между "onChangeHandler": и
+          "function `
+        </span>
+      </div>
+
       <div onDoubleClick={handlerCline} className="textarea-row">
         <div className="textarea-tooltip">Вставьте Js функцию: </div>
         <textarea
@@ -53,7 +66,7 @@ function ComponentFuncToJsone() {
         </button>
       </div>
       <div className="controll-tooltip">
-        Кликни на текст что бы скопировать в буфер обмена
+        Один клик копирует текст в буфер обмена
       </div>
       <textarea
         rows="10"

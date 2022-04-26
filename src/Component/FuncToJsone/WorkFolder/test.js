@@ -1,3 +1,5 @@
+productCountry;
+
 function onChangeHandler({ values: updatedValues, fieldsMap: updatedFields }) {
   if (
     updatedFields?.productTnvd &&
@@ -92,9 +94,9 @@ function onChangeHandler({ values: updatedValues, fieldsMap: updatedFields }) {
       updatedValues.serviceOkved = newOkved.codeOcved;
     }
   }
-  if (!updatedValues.productCountry.value) {
+  if (!updatedValues.productCountry) {
     updatedValues.productCountry = {
-      value: "Российская Федерация",
+      value: "Россия",
       key: "21b35792-6d8e-4e04-a5d2-a73b9efa8b91",
     };
   }
