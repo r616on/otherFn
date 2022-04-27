@@ -1,11 +1,15 @@
 export const funcToJson = (value) => {
   return `"onChangeHandler": ${JSON.stringify(
-    `${value}`.replace(/"/g, "'").replace(/ {1,}/g, " "),
+    `${value}`.replace(/\\n/g, "").replace(/"/g, "'").replace(/ {1,}/g, " "),
     null,
     0
   ).replace(/\\n/g, "")},`;
 };
 
 export const jsonToFunc = (value) => {
-  return value.replace('"onChangeHandler": "', "").replace('",', "");
+  return value
+    .replace(/\\n/g, "")
+    .replace('"onChangeHandler": "', "")
+    .replace('}"', "}")
+    .replace(/,\s*$/, "");
 };

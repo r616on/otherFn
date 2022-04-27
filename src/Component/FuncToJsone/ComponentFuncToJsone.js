@@ -54,7 +54,9 @@ function ComponentFuncToJsone() {
       </div>
 
       <div onDoubleClick={handlerCline} className="textarea-row">
-        <div className="textarea-tooltip">Вставьте Js функцию: </div>
+        <div className="textarea-tooltip">
+          Вставьте Js функцию или строку onChangeHandler :
+        </div>
         <textarea
           onChange={handelChange}
           rows="10"
