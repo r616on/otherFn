@@ -7,6 +7,7 @@ function ComponentFuncToJsone() {
   const [massage, setMassage] = useState("");
   const [text, setText] = useState("");
   const [textarea, setTextarea] = useState("");
+  const [comma, setComma] = useState(true);
 
   const handelChange = (e) => {
     const value = e.target.value;
@@ -14,11 +15,14 @@ function ComponentFuncToJsone() {
     if (value.includes('"onChangeHandler":')) {
       setText(jsonToFunc(value));
     } else if (value !== "") {
-      setText(funcToJson(value));
+      setText(funcToJson(value, comma));
     }
   };
   const handlerCline = (e) => {
     setTextarea("");
+  };
+  const handlerComma = ({ target }) => {
+    setComma(target.checked);
   };
   const handlerClick = (e) => {
     e.preventDefault();
@@ -36,6 +40,7 @@ function ComponentFuncToJsone() {
         setMassage("Ошибка");
       });
   };
+
   return (
     <div className="ComponentFuncToJsone">
       <h3 className="title">Конвертер для onChangeHandler </h3>
@@ -43,7 +48,6 @@ function ComponentFuncToJsone() {
         Для конвертации JS функций в onChangeHandler текст втавьте
         <span> 'function onChangeHandler...'</span>
       </h4>
-
       <div className="title-text">
         Для конвертации onChangeHandler в js func вставьте
         <span> ' "onChangeHandler": "function... '</span>
@@ -52,7 +56,6 @@ function ComponentFuncToJsone() {
           "function `
         </span>
       </div>
-
       <div onDoubleClick={handlerCline} className="textarea-row">
         <div className="textarea-tooltip">
           Вставьте Js функцию или строку onChangeHandler :
@@ -70,6 +73,17 @@ function ComponentFuncToJsone() {
       <div className="controll-tooltip">
         Один клик копирует текст в буфер обмена
       </div>
+      <input
+        type="checkbox"
+        className="controll-checkbox"
+        id="comma"
+        checked={comma}
+        onChange={handlerComma}
+      />
+      <label htmlFor="comma" className="controll-checkbox-lable">
+        Запятая в конце
+      </label>
+
       <textarea
         rows="10"
         defaultValue={text}
@@ -77,7 +91,6 @@ function ComponentFuncToJsone() {
         className="Text"
         readOnly
       />
-
       <div className="controll">
         {massage !== "" && <div className="controll-text">{massage}</div>}
         <button onClick={handlerClick} className="Bottom">

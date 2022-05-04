@@ -113,3 +113,22 @@ if (updatedValues.productSelectionButtons === "2") {
     updatedValues.serviceOkved = newOkved.codeOcved;
   }
 }
+
+if (updatedValues?.docLink && updatedValues?.docLink[0]?.link) {
+  if (updatedFields?.attachReport) {
+    const link = `<a href=${updatedValues?.docLink[0]?.link} target='_blank' rel='nofollow noopener'>стандарта</a>`;
+    if (updatedFields.attachReport.tooltip.indexOf(link, 0) === -1) {
+      updatedFields.attachReport.tooltip =
+        updatedFields.attachReport.tooltip + " " + link;
+    }
+  }
+}
+const f = {
+  gridAttributes: {
+    style: {
+      "margin-left": "21px",
+    },
+    lg: 6,
+  },
+  id: "lawAmountCountry",
+};

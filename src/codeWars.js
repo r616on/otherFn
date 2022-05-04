@@ -29,15 +29,33 @@
 //   }
 // }
 
-const xMarksTheSpot = (input) => {
-  return [];
-};
+function topThreeWords(text) {
+  const b = text
+    .split(" ")
+    .filter((item) => item !== "" && item !== " ")
+    .map((item) => item.toLowerCase());
+  const arrRes = [];
+  b.forEach((item) => {
+    arrRes.push({
+      item: item,
+      number: b.filter((el) => el === item).length,
+    });
+  });
+  const c = arrRes.reduce((arr, item) => {
+    const removed = arr.filter((i) => i.number !== item.number);
+    return [...removed, item];
+  }, []);
+  const noSort = [...c];
+  c.sort((a, b) => b.number - a.number);
+  if (c.length > 4) {
+    return [c[0].item, c[1].item, c[2].item];
+  } else if (c.length > 3) {
+    return [noSort[0].item, noSort[1].item];
+  } else if (c.length > 2) {
+    return [noSort[0].item];
+  } else {
+    return [];
+  }
+}
 
-console.log(
-  xMarksTheSpot([
-    [
-      ["o", "o"],
-      ["o", "o"],
-    ],
-  ])
-);
+console.log(topThreeWords("a a a  b  c c  d d d D  e e e e e"));

@@ -1,13 +1,10 @@
-if (!updatedValues.productCountry.value) {
-  updatedValues.productCountry = {
-    value: "Российская Федерация",
-    key: "21b35792-6d8e-4e04-a5d2-a73b9efa8b91",
-  };
-}
-
-if (!updatedValues.productCountry) {
-  updatedValues.productCountry = {
-    value: "Россия",
-    key: "21b35792-6d8e-4e04-a5d2-a73b9efa8b91",
-  };
+function onChangeHandler({ errors, fieldsMap, values }) {
+  const updatedFields = { ...fieldsMap };
+  const updatedValues = { ...values };
+  if (updatedValues?.docLink && updatedValues?.docLink[0]?.link) {
+    if (updatedFields?.attachReport) {
+      updatedFields.attachReport.tooltip = `Предоставьте отчетные материалы, проект доработанного экспортного контракта, подготовленные в соответствии с разделом 3.1, соответствующие разделу 3.2 <a href=${updatedValues?.docLink[0]?.link} target='_blank' rel='nofollow noopener'>стандарта</a>`;
+    }
+  }
+  return { updatedValues, updatedFields, updatedErrors: { ...errors } };
 }

@@ -1,6 +1,6 @@
 import "./App.css";
 import ComponentFuncToJsone from "./Component/FuncToJsone/ComponentFuncToJsone";
-//import "./codeWars";
+import "./codeWars";
 
 function App() {
   return (
