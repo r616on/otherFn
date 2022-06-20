@@ -116,10 +116,15 @@ if (updatedValues.productSelectionButtons === "2") {
 
 if (updatedValues?.docLink && updatedValues?.docLink[0]?.link) {
   if (updatedFields?.attachReport) {
-    const link = `<a href=${updatedValues?.docLink[0]?.link} target='_blank' rel='nofollow noopener'>стандарта</a>`;
+    const link = updatedValues.docLink[0].link;
+    const linkFull = (
+      <a href="" target="_blank" rel="nofollow noopener">
+        стандарта
+      </a>
+    );
     if (updatedFields.attachReport.tooltip.indexOf(link, 0) === -1) {
       updatedFields.attachReport.tooltip =
-        updatedFields.attachReport.tooltip + " " + link;
+        updatedFields.attachReport.tooltip + " " + linkFull;
     }
   }
 }
@@ -132,3 +137,42 @@ const f = {
   },
   id: "lawAmountCountry",
 };
+const validParams = [
+  {
+    name: "Size",
+    attributes: {
+      min: 4,
+      max: 6,
+      message: "Код ТН ВЭД от 4 до 6 знаков знаков включительно",
+    },
+  },
+];
+if (typeof updatedValues.productCatalog === "string") {
+  updatedValues.productCatalog = null;
+}
+if (typeof updatedValues.serviceCatalog === "string") {
+  updatedValues.serviceCatalog = null;
+}
+if (updatedValues?.serviceCost && updatedValues?.penaltyAmount) {
+  updatedValues.amountIncludingPenalty = (
+    +updatedValues.serviceCost - +updatedValues.penaltyAmount
+  ).toFixed(2);
+}
+function boundFields(updatedValues) {
+  if (typeof updatedValues?.store === "object") {
+    if (
+      updatedValues.store?.pricePartnerServiceD &&
+      updatedValues.store?.pricePartnerServiceD !== updatedValues?.amount
+    ) {
+      updatedValues.amount = updatedValues.store.pricePartnerServiceD;
+    }
+    if (
+      updatedValues.store?.partnerServiceCompositionD &&
+      updatedValues.store?.partnerServiceCompositionD !==
+        updatedValues?.serviceComposition
+    ) {
+      updatedValues.serviceComposition =
+        updatedValues.store.partnerServiceCompositionD;
+    }
+  }
+}

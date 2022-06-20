@@ -101,7 +101,7 @@ function onChangeHandler({
     "mainCompetitors",
     "targetCustomerPortrait",
     "additionalMaterials",
-    "additionalInformationApp",
+    "additionalInformation",
     "serviceTooltip",
     "executor_contact",
     "executor_phone",
@@ -201,6 +201,7 @@ function onChangeHandler({
     "mainCompetitors",
     "targetCustomerPortrait",
     "additionalMaterials",
+    "additionalInformation",
     "serviceTooltip",
     "isGroupCompany",
     "serviceTooltip",
@@ -281,6 +282,7 @@ function onChangeHandler({
     "mainCompetitors",
     "targetCustomerPortrait",
     "additionalMaterials",
+    "additionalInformation",
     "executor_contact",
     "executor_phone",
     "executor_eMail",
@@ -360,5 +362,13 @@ function onChangeHandler({
     }
   });
   const updatedValues = { ...values };
+  if (
+    updatedValues?.serviceCost &&
+    updatedValues?.penaltyAmount &&
+    /^[0-9]+$/.test(updatedValues?.penaltyAmount)
+  ) {
+    updatedValues.amountIncludingPenalty =
+      +updatedValues.serviceCost - +updatedValues.penaltyAmount;
+  }
   return { updatedValues, updatedFields, updatedErrors: { ...errors } };
 }
