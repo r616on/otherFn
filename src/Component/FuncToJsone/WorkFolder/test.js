@@ -1,27 +1,14 @@
 function onChangeHandler({ errors, fieldsMap, values }) {
   const updatedFields = { ...fieldsMap };
   const updatedValues = { ...values };
-
-  function boundFields(updatedValues) {
-    if (typeof updatedValues?.store === "object") {
-      if (
-        updatedValues.store?.pricePartnerServiceD &&
-        updatedValues.store?.pricePartnerServiceD !== updatedValues?.amount
-      ) {
-        updatedValues.amount = updatedValues.store.pricePartnerServiceD;
-      }
-      if (
-        updatedValues.store?.partnerServiceCompositionD &&
-        updatedValues.store?.partnerServiceCompositionD !==
-          updatedValues?.serviceComposition
-      ) {
-        updatedValues.serviceComposition =
-          updatedValues.store.partnerServiceCompositionD;
-      }
-    }
+  if (
+    updatedFields?.productTnvd &&
+    updatedFields?.productTnvd?.validationSchema?.minLength?.value !== 6
+  ) {
+    updatedFields.productTnvd.validationSchema = {
+      minLength: { value: 6, message: "Не меньше 6 цифр в ТНВЭД", path: "" },
+    };
   }
-  boundFields(updatedValues);
-
   if (!!updatedValues.rowsNumber) {
     if (updatedValues.serviceTableEditTitle !== "Изменить услугу") {
       updatedValues.serviceTableEditTitle = "Изменить услугу";
@@ -94,6 +81,18 @@ function onChangeHandler({ errors, fieldsMap, values }) {
       value: "Россия",
       key: "21b35792-6d8e-4e04-a5d2-a73b9efa8b91",
     };
+  }
+  const { productTable = [] } = updatedValues;
+  if (productTable?.length >= 4) {
+    updatedFields.productTable.canAddRow = false;
+  } else {
+    updatedFields.productTable.canAddRow = true;
+  }
+  const { serviceTable = [] } = updatedValues;
+  if (serviceTable?.length >= 4) {
+    updatedFields.serviceTable.canAddRow = false;
+  } else {
+    updatedFields.serviceTable.canAddRow = true;
   }
   return { updatedValues, updatedFields, updatedErrors: { ...errors } };
 }

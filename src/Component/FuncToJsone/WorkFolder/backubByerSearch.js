@@ -31,24 +31,6 @@ function onChangeHandler({ errors, fieldsMap, values }) {
   if (updatedValues.productSelectionButtons === "1") {
     const uploadedTnvd = updatedValues.productCatalog;
     const uploadedOkved = updatedValues.serviceCatalog;
-    if (updatedValues.productTable.length > 0) {
-      const tnvdUpdateFilter = updatedValues.productTable[0].productTnvd
-        .split("")
-        .slice(0, 4)
-        .join("");
-      updatedFields.productCatalog.requestParams.filters = [
-        { name: "tnved.code_startlike", value: tnvdUpdateFilter },
-        { name: "caption_like" },
-        { name: "goodsType", value: "goods" },
-        { valueFromField: "client", name: "org.uuid" },
-      ];
-    } else if (updatedValues.productTable.length === 0) {
-      updatedFields.productCatalog.requestParams.filters = [
-        { name: "caption_like" },
-        { name: "goodsType", value: "goods" },
-        { valueFromField: "client", name: "org.uuid" },
-      ];
-    }
     if (uploadedTnvd) {
       updatedValues.productTnvd = "";
       updatedValues.productTnvdName = null;
@@ -75,43 +57,8 @@ function onChangeHandler({ errors, fieldsMap, values }) {
     }
   }
   if (updatedValues.productSelectionButtons === "2") {
-    let newTnvd = updatedValues.productTnvdName;
+    const newTnvd = updatedValues.productTnvdName;
     const newOkved = updatedValues.serviceOKVEDName;
-    if (updatedValues.productTable.length > 0) {
-      const tnvdFilter = updatedValues.productTable[0].productTnvd
-        .split("")
-        .slice(0, 4)
-        .join("");
-      updatedFields.productTnvdName.requestParams.filters = [
-        { name: "code_startlike", value: tnvdFilter },
-      ];
-      if (
-        typeof updatedValues.productTnvdName === "string" ||
-        updatedValues?.productTnvdName?.value?.length < 4
-      ) {
-        updatedValues.productTnvdName = {
-          value: tnvdFilter,
-          key: " ",
-          prodDescription: null,
-          naming: "",
-          codeTnved: tnvdFilter,
-        };
-      }
-      if (updatedValues?.productTnvdName?.value?.length > 4) {
-        if (
-          updatedValues.productTnvdName.value.split("").slice(0, 4).join("") ===
-          tnvdFilter
-        ) {
-          updatedFields.productTnvdName.requestParams.filters = [
-            { name: "code_startlike" },
-          ];
-        }
-      }
-    } else if (updatedValues.productTable.length === 0) {
-      updatedFields.productTnvdName.requestParams.filters = [
-        { name: "code_startlike" },
-      ];
-    }
     if (newTnvd) {
       updatedValues.productCatalog = null;
       updatedValues.productTnvd = newTnvd.codeTnved;
@@ -120,12 +67,6 @@ function onChangeHandler({ errors, fieldsMap, values }) {
       updatedValues.serviceCatalog = null;
       updatedValues.serviceOkved = newOkved.codeOcved;
     }
-  }
-  const { productTable = [] } = updatedValues;
-  if (productTable?.length >= 4) {
-    updatedFields.productTable.canAddRow = false;
-  } else {
-    updatedFields.productTable.canAddRow = true;
   }
   if (!updatedValues.productCountry) {
     updatedValues.productCountry = {

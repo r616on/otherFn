@@ -1,0 +1,94 @@
+{
+  "productTable": {
+    "addRowButtonText": "+ Добавить продукцию",
+    "uiType": "proTable",
+    "id": "productTable",
+    "rowNumber": { "title": "№", "width": "5%" },
+    "columns": [
+      {
+        "title": "Наименование",
+        "dataIndex": "productCaption",
+        "width": "26%"
+      },
+      {
+        "title": "КОД ТН ВЭД",
+        "dataIndex": "productTnvd",
+        "width": "15%"
+      },
+      {
+        "title": "Описание",
+        "dataIndex": "productDescription",
+        "width": "29%"
+      },
+      {
+        "title": "Страна",
+        "dataIndex": "productCountry",
+        "render": {
+          "type": "object",
+          "path": "value"
+        },
+        "width": "15%"
+      },
+      {
+        "title": " ",
+        "render": "rowManager",
+        "width": "10%"
+      }
+    ],
+    "selectedRows": [],
+    "editBlockName": "productTableEdit",
+    "conditionals": [
+      {
+        "equalValue": "0",
+        "equalName": "export",
+        "type": "visible"
+      }
+    ]
+  },
+  "serviceTable": {
+    "addRowButtonText": "+ Добавить услугу",
+    "uiType": "proTable",
+    "id": "serviceTable",
+    "rowNumber": { "title": "№", "width": "5%" },
+    "columns": [
+      {
+        "title": "Наименование",
+        "dataIndex": "serviceCaption",
+        "width": "26%"
+      },
+      {
+        "title": "КОД ОКВЭД",
+        "dataIndex": "serviceOkved",
+        "width": "15%"
+      },
+      {
+        "title": "Описание",
+        "dataIndex": "productDescription",
+        "width": "29%"
+      },
+      {
+        "title": "Страна",
+        "dataIndex": "productCountry",
+        "render": {
+          "type": "object",
+          "path": "value"
+        },
+        "width": "15%"
+      },
+      {
+        "title": " ",
+        "render": "rowManager",
+        "width": "10%"
+      }
+    ],
+    "selectedRows": [],
+    "editBlockName": "serviceTableEdit",
+    "conditionals": [
+      {
+        "equalValue": "1",
+        "equalName": "export",
+        "type": "visible"
+      }
+    ]
+  }
+}
