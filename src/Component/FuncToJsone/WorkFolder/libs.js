@@ -1,3 +1,4 @@
+updatedValues.bicReference = { value: "", key: "" };
 if (
   updatedFields?.productTnvd &&
   updatedFields?.productTnvd?.validationSchema?.maxLength?.value !== 4
@@ -255,7 +256,84 @@ const sanctions = {
     },
   ],
 };
-
+const валюта = {
+  id: "amountt",
+  label: "Валюта",
+  value: null,
+  type: "String",
+  uiType: "reference",
+  constraints: [
+    {
+      name: "NotNull",
+    },
+  ],
+  requestParams: {
+    resultObjectParams: {
+      name: ["code", "caption"],
+      key: "uuid",
+    },
+    params: {
+      headers: {},
+      queryParams: {
+        isEurasianUnionMember: true,
+      },
+      relativeUrl:
+        "api/v1/catalogs/currency/items/search?page=0&size=10&sort=&showRefs=1",
+    },
+    filters: [
+      {
+        name: "or",
+        value: [
+          {
+            name: "caption_like_ci",
+          },
+        ],
+      },
+    ],
+  },
+};
+const страны = {
+  id: "countryStudy",
+  uiType: "reference",
+  multiple: true,
+  disabled: false,
+  maxMultiple: 3,
+  constraints: [
+    {
+      name: "NotNull",
+    },
+  ],
+  conditionals: [
+    {
+      type: "visible",
+      equalName: "selectedGeographyArea",
+      equalValue: "selected-country",
+    },
+  ],
+  label: "Страны исследования (не более 3 стран)",
+  requestParams: {
+    resultObjectParams: {
+      name: "reportShortName",
+      key: "uuid",
+    },
+    params: {
+      headers: {},
+      queryParams: {},
+      relativeUrl:
+        "api/v1/catalogs/country/items/search?page=0&size=100&sort=reportShortName&showRefs=1",
+    },
+    filters: [
+      {
+        name: "or",
+        value: [
+          {
+            name: "reportShortName_like_ci",
+          },
+        ],
+      },
+    ],
+  },
+};
 function supFilterTNVD() {
   if (updatedValues.productSelectionButtons === "1") {
     const uploadedTnvd = updatedValues.productCatalog;
@@ -387,3 +465,63 @@ function supFilterTNVD() {
     updatedFields.serviceTable.canAddRow = true;
   }
 }
+function CustomValidate() {
+  const {
+    executorAccount,
+    executorCorrAccount,
+    executorBik,
+    resident,
+    isExporterAcceptPartnerTemplate,
+  } = updatedValues;
+  const {
+    executorAccount: executorAccountFild,
+    executorCorrAccount: executorCorrAccountFild,
+    executorBik: executorBikFild,
+  } = updatedFields;
+  if (
+    resident &&
+    isExporterAcceptPartnerTemplate !== "isExporterAcceptPartnerTemplate-yes"
+  ) {
+    /// пи* внимательно с regexp выражениями если переводим в json и МДМ
+    const regxp = /^[\d.,]+$/g;
+    const message = "Только числовые символы";
+    if (executorAccount) {
+      const isEreExecutorAccount = !executorAccount.match(regxp);
+      executorAccountFild.validationSchema.custom = {
+        fn: () => isEreExecutorAccount,
+        message,
+      };
+      set(errors, "executorAccount", isEreExecutorAccount ? { message } : null);
+    }
+    if (executorCorrAccount) {
+      const isEreExecutorCorrAccount = !executorCorrAccount.match(regxp);
+      executorCorrAccountFild.validationSchema.custom = {
+        fn: () => isEreExecutorCorrAccount,
+        message,
+      };
+      set(
+        errors,
+        "executorCorrAccount",
+        isEreExecutorCorrAccount ? { message } : null
+      );
+    }
+    if (executorBik) {
+      const isEreExecutorBik = !executorBik.match(regxp);
+      executorBikFild.validationSchema.custom = {
+        fn: () => isEreExecutorBik,
+        message,
+      };
+      set(errors, "executorBik", isEreExecutorBik ? { message } : null);
+    }
+  }
+}
+const pattern = {
+  regexp: "^[\\d.,]+$",
+  message: "Только числовые символы",
+};
+updatedFields.executorAccount.validationSchema = {
+  required: {
+    message: "Заполните поле",
+  },
+  pattern: pattern,
+};
