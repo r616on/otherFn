@@ -90,5 +90,115 @@
         "type": "visible"
       }
     ]
+  },
+  "r": {
+    "multiline": false,
+    "readonly": true,
+    "multiple": false,
+    "id": "productDescription",
+    "label": "Описание",
+    "type": "String",
+    "conditionals": [
+      {
+        "equalValue": "2",
+        "equalName": "productSelectionButtons",
+        "type": "editable"
+      },
+      {
+        "type": "noNeedValidate",
+        "equalValue": "1",
+        "equalName": "productSelectionButtons"
+      }
+    ]
+  },
+  "валюта": {
+    "id": "amountt",
+    "label": "Валюта",
+    "value": null,
+    "type": "String",
+    "uiType": "reference",
+    "constraints": [
+      {
+        "name": "NotNull"
+      }
+    ],
+    "requestParams": {
+      "resultObjectParams": {
+        "name": ["code", "caption"],
+        "key": "uuid"
+      },
+      "params": {
+        "headers": {},
+        "queryParams": {
+          "isEurasianUnionMember": true
+        },
+        "relativeUrl": "api/v1/catalogs/currency/items/search?page=0&size=100&sort=&showRefs=1"
+      },
+      "filters": [
+        {
+          "name": "or",
+          "value": [
+            {
+              "name": "caption_like_ci"
+            }
+          ]
+        }
+      ]
+    }
+  },
+  "страны": {
+    "id": "countryStudy",
+    "uiType": "reference",
+    "multiple": true,
+    "disabled": false,
+    "maxMultiple": 3,
+    "constraints": [
+      {
+        "name": "NotNull"
+      }
+    ],
+    "conditionals": [
+      {
+        "type": "visible",
+        "equalName": "selectedGeographyArea",
+        "equalValue": "selected-country"
+      }
+    ],
+    "label": "Страны исследования (не более 3 стран)",
+    "requestParams": {
+      "resultObjectParams": {
+        "name": "reportShortName",
+        "key": "uuid"
+      },
+      "params": {
+        "headers": {},
+        "queryParams": {},
+        "relativeUrl": "api/v1/catalogs/country/items/search?page=0&size=100&sort=reportShortName&showRefs=1"
+      },
+      "filters": [
+        {
+          "name": "or",
+          "value": [
+            {
+              "name": "reportShortName_like_ci"
+            }
+          ]
+        }
+      ]
+    },
+    "b": {
+      "name": "Pattern",
+      "attributes": {
+        "regexp": "^([1-9]|1[0-9]|2[0-9]|3[0-9]|4[0-9]|5[0-9]|6[0-9]|7[0-9]|8[0-9]|9[0-9])$",
+        "message": "Только числовые символы от 1 до 99"
+      }
+    },
+    "old": {
+      "name": "Pattern",
+      "attributes": {
+        "regexp": "^\\d{0,8}$",
+        "message": "Только числовые символы"
+      }
+    }
   }
 }

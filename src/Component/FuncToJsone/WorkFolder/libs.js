@@ -60,8 +60,9 @@ const a = {
 const b = {
   name: "Pattern",
   attributes: {
-    regexp: "^([1-9]|1[0-9]|2[0-9]|3[0-9]|4[0-9]|5[0-9]|6[0])$",
-    message: "Только числовые символы от 1 до 60",
+    regexp:
+      "^([0-9]|1[0-9]|2[0-9]|3[0-9]|4[0-9]|5[0-9]|6[0-9]7[0-9]8[0-9]9[0-9]10[0])$",
+    message: "Только числовые символы от 1 до 100",
   },
 };
 
@@ -524,4 +525,25 @@ updatedFields.executorAccount.validationSchema = {
     message: "Заполните поле",
   },
   pattern: pattern,
+};
+const reply = {
+  moderator_report_approve,
+  esc_claim_process,
+  reply_read_only,
+  unfreeze_esc,
+  repartition_esc,
+  contract_esc,
+  claim,
+  act_review,
+  contract_review,
+  exporter_claim_esc,
+  raiting_check,
+  raiting_review_need_info,
+  raiting_review_product,
+  report_awaiting_exporter,
+  report_create,
+  report_review_esc,
+  convReportComplex_review,
+  esc_complex_report,
+  esc_price_accept,
 };
